@@ -1,0 +1,137 @@
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <arpa/inet.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <errno.h>
+#include <string.h>
+#include <sys/types.h>
+
+#define NUM_SYMBOLS 3
+#define FIELD_SIZE 10
+typedef struct {
+char symbol; // symbol character
+int x; // x coordinate on the field
+int y; // y coordinate on the field
+} symbol_t;
+
+int main(){
+	// Initialize symbols with random positions on the field
+	
+    symbol_t *symbols = NULL;
+for (int i = 0; i < NUM_SYMBOLS; i++) {
+    symbols[i].symbol = 'A' + i; // symbol character is 'A', 'B', or 'C'
+    symbols[i].x = rand() % FIELD_SIZE; // random x coordinate
+    symbols[i].y = rand() % FIELD_SIZE; // random y coordinate
+}
+
+// Loop for receiving and processing user input
+while (1) {
+    char input[16]; // buffer for user input
+    printf("Enter a symbol and direction (e.g. A U for moving symbol A up): ");
+    fgets(input, 16, stdin);
+
+    // Parse symbol character and direction from input
+    char symbol_char = input[0];
+    char direction = input[1];
+
+    // Find the symbol with the given character
+    symbol_t *symbol = NULL;
+    for (int i = 0; i < NUM_SYMBOLS; i++) {
+        if (symbols[i].symbol == symbol_char) {
+            symbol = &symbols[i];
+            break;
+        }
+    }
+
+    // If symbol is not found, print error message and continue
+    if (symbol == NULL) {
+        printf("Invalid symbol character: %c\n", symbol_char);
+        continue;
+    }
+
+    // Update symbol position based on direction
+    switch (direction) {
+        case 'U':
+            symbol->y = (symbol->y - 1 + FIELD_SIZE) % FIELD_SIZE; // move up
+            break;
+        case 'D':
+            symbol->y = (symbol->y + 1) % FIELD_SIZE; // move down
+            break;
+        case 'L':
+            symbol->x = (symbol->x - 1 + FIELD_SIZE) % FIELD_SIZE; // move left
+            break;
+        case 'R':
+            symbol->x = (symbol->x + 1) % FIELD_SIZE; // move right
+            break;
+        default:
+            printf("Invalid direction: %c\n", direction);
+            continue;
+    }
+
+    // Print updated field
+    printf("\n");
+    for (int y = 0; y < FIELD_SIZE; y++) {
+        for (int x = 0; x < FIELD_SIZE; x++) {
+            int found = 0;
+            for (int i = 0; i < NUM_SYMBOLS; i++) {
+                if (symbols[i].x == x && symbols[i].y == y) {
+                    printf("%c ", symbols[i].symbol);
+                    found = 1;
+                    break;
+                }
+            }
+		}
+	}
+}
+           
+
+/*
+Post examples on threads
+1. Create a function that
+creates the field.
+2. Create a function to
+display scores. I think on the
+side look better than above
+the field.
+3. Create a function to move
+a player or the rabbit. (Blank
+current location and print at
+new location)
+4. You may want to use
+double the horizontal as it
+will make the screen look
+better.
+5. Create a function to
+display items. For initial
+testing just have it do a print.
+Then once you get other
+things working have it send
+the move to all players, the
+rabbit and possibly print on
+the server.
+6. Use the following macros
+to position the cursor. (These
+are based on VT100
+terminals)
+#define clear() printf("\
+033[H\033[J")
+#define gotoxy(x,y)
+printf("\033[%d;%dH", (y),
+(x))
+7. Place the cursor at the
+bottom or clear the screen
+when you exit. It will make
+the screen nicer when the
+program ends.
+8. Create the rabbit and
+possibly one player working
+as part of the server before
+attempting to split it into
+client and server. This way
+you can verify the logic
+without having to worry
+about the socket.*/
+	return 0;
+}

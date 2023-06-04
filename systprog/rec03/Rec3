@@ -1,0 +1,2410 @@
+Script started on 2022-09-22 21:28:43-05:00 [TERM="xterm" TTY="/dev/pts/19" COLUMNS="93" LINES="49"]
+]0;njb0130@cell01-cse: ~/SystProg/rec03njb0130@cell01-cse:~/SystProg/rec03$ ls
+ audio.cpp   dvd.h           items.h   [0m[01;34mLab05[0m   [01;34mLab10[0m      loans.cpp    patron.cpp
+ audio.h     Homework3.exe   [01;34mLab01[0m     [01;34mlab06[0m   [01;34mLab11[0m      loans.h      patron.h
+ book.cpp    item.cpp        [01;34mLab02[0m     [01;34mlab07[0m   [01;34mLabEC[0m      main.cpp     patrons.cpp
+ book.h      item.h          [01;34mLab03[0m     [01;34mLab08[0m   loan.cpp   Makefile     patrons.h
+ dvd.cpp     items.cpp       [01;34mLab04[0m     [01;34mLab09[0m   loan.h    '[options]'   sedfile.txt
+]0;njb0130@cell01-cse: ~/SystProg/rec03njb0130@cell01-cse:~/SystProg/rec03$ ls - > sedfile.txt
+ls: cannot access '-': No such file or directory
+]0;njb0130@cell01-cse: ~/SystProg/rec03njb0130@cell01-cse:~/SystProg/rec03$ ls - > sedfile.txt[C[1@l[C[1@ 
+]0;njb0130@cell01-cse: ~/SystProg/rec03njb0130@cell01-cse:~/SystProg/rec03$ nan[K[K[Kls
+ audio.cpp   dvd.h           items.h   [0m[01;34mLab05[0m   [01;34mLab10[0m      loans.cpp    patron.cpp
+ audio.h     Homework3.exe   [01;34mLab01[0m     [01;34mlab06[0m   [01;34mLab11[0m      loans.h      patron.h
+ book.cpp    item.cpp        [01;34mLab02[0m     [01;34mlab07[0m   [01;34mLabEC[0m      main.cpp     patrons.cpp
+ book.h      item.h          [01;34mLab03[0m     [01;34mLab08[0m   loan.cpp   Makefile     patrons.h
+ dvd.cpp     items.cpp       [01;34mLab04[0m     [01;34mLab09[0m   loan.h    '[options]'   sedfile.txt
+]0;njb0130@cell01-cse: ~/SystProg/rec03njb0130@cell01-cse:~/SystProg/rec03$ nano sedfile.txt
+[?2004h[?1049h[22;0;0t[1;49r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[47;40H(B[0;7m[ Reading... ](B[m[47;39H(B[0;7m[ Read 36 lines ](B[m[H(B[0;7m  GNU nano 4.8                             sedfile.txt                                       [1;92H(B[m[48d(B[0;7m^G(B[m Get Help    (B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut Text    (B[0;7m^J(B[m Justify     (B[0;7m^C(B[m Cur Pos[49d(B[0;7m^X(B[m Exit[49;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste Text  (B[0;7m^T(B[m To Spell    (B[0;7m^_(B[m Go To Line[47d[2d[39;49m(B[mtotal 236[3d-rw-r--r-- 1 njb0130 domain^users   1441 Apr 18  2021 audio.cpp[4d-rw-r--r-- 1 njb0130 domain^users    699 Apr 18  2021 audio.h[5d-rw-r--r-- 1 njb0130 domain^users   1272 Apr 18  2021 book.cpp[6d-rw-r--r-- 1 njb0130 domain^users    626 Apr 19  2021 book.h[7d-rw-r--r-- 1 njb0130 domain^users   1444 Apr 18  2021 dvd.cpp[8d-rw-r--r-- 1 njb0130 domain^users    688 Apr 18  2021 dvd.h[9d-rw-r--r-- 1 njb0130 domain^users 105188 Apr 19  2021 Homework3.exe[10d-rw-r--r-- 1 njb0130 domain^users    852 Apr 18  2021 item.cpp[11d-rw-r--r-- 1 njb0130 domain^users    424 Apr 18  2021 item.h[12d-rw-r--r-- 1 njb0130 domain^users   3585 Apr 18  2021 items.cpp[13d-rw-r--r-- 1 njb0130 domain^users    473 Apr 18  2021 items.h[14ddrwxr-xr-x 3 njb0130 domain^users   4096 Sep 22 21:24 Lab01[15ddrwxr-xr-x 2 njb0130 domain^users   4096 Sep 22 21:24 Lab02[16ddrwxr-xr-x 3 njb0130 domain^users   4096 Sep 22 21:24 Lab03[17ddrwxr-xr-x 2 njb0130 domain^users   4096 Sep 22 21:24 Lab04[18ddrwxr-xr-x 2 njb0130 domain^users   4096 Sep 22 21:24 Lab05[19ddrwxr-xr-x 2 njb0130 domain^users   4096 Sep 22 21:24 lab06[20ddrwxr-xr-x 2 njb0130 domain^users   4096 Sep 22 21:24 lab07[21ddrwxr-xr-x 2 njb0130 domain^users   4096 Sep 22 21:24 Lab08[22ddrwxr-xr-x 2 njb0130 domain^users   4096 Sep 22 21:24 Lab09[23ddrwxr-xr-x 2 njb0130 domain^users   4096 Sep 22 21:24 Lab10[24ddrwxr-xr-x 2 njb0130 domain^users   4096 Sep 22 21:24 Lab11[25ddrwxr-xr-x 2 njb0130 domain^users   4096 Sep 22 21:24 LabEC[26d-rw-r--r-- 1 njb0130 domain^users    984 Apr 17  2021 loan.cpp[27d-rw-r--r-- 1 njb0130 domain^users    670 Apr 17  2021 loan.h[28d-rw-r--r-- 1 njb0130 domain^users   6294 Apr 18  2021 loans.cpp[29d-rw-r--r-- 1 njb0130 domain^users    839 Apr 18  2021 loans.h[30d-rw-r--r-- 1 njb0130 domain^users   3190 Apr 18  2021 main.cpp[31d-rw-r--r-- 1 njb0130 domain^users    324 Apr 19  2021 Makefile[32d-rw-r--r-- 1 njb0130 domain^users[40G0 Sep 22 21:28 [options][33d-rw-r--r-- 1 njb0130 domain^users    701 Mar 16  2021 patron.cpp[34d-rw-r--r-- 1 njb0130 domain^users    511 Mar 16  2021 patron.h[35d-rw-r--r-- 1 njb0130 domain^users   2302 Mar 19  2021 patrons.cpp[36d-rw-r--r-- 1 njb0130 domain^users    454 Mar 16  2021 patrons.h[37d-rw-r--r-- 1 njb0130 domain^users[40G0 Sep 22 21:29 sedfile.txt[2d[?12l[?25h[?25l[?12l[?25h[49;1H[?1049l[23;0;0t[?1l>[?2004l
+
+Use "fg" to return to nano.
+
+[1]+  Stopped                 nano sedfile.txt
+]0;njb0130@cell01-cse: ~/SystProg/rec03njb0130@cell01-cse:~/SystProg/rec03$ sed i[K-i "s/^-/R/g" sedfile.txt
+]0;njb0130@cell01-cse: ~/SystProg/rec03njb0130@cell01-cse:~/SystProg/rec03$ nano sedi[K[K[K[K[K[K[K[K[Ksed -i "s/^-/R/g" sedfile.txt[13Pnano[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004h[?1049h[22;0;0t[1;49r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[47d(B[0;7mFile sedfile.txt is being edited by njb0130 (with nano 4.8, PID 3004222); open anyway?       [48;1H Y(B[m Yes[49d(B[0;7m N(B[m No[49;17H(B[0;7m^C(B[m Cancel[47;87H[?12l[?25h[?25l[J[49d[?12l[?25h[49;1H[?1049l[23;0;0t[?1l>[?2004l]0;njb0130@cell01-cse: ~/SystProg/rec03njb0130@cell01-cse:~/SystProg/rec03$ nano sedfile.txt
+[?2004h[?1049h[22;0;0t[1;49r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[47d(B[0;7mFile sedfile.txt is being edited by njb0130 (with nano 4.8, PID 3004222); open anyway?       [48;1H Y(B[m Yes[49d(B[0;7m N(B[m No[49;17H(B[0;7m^C(B[m Cancel[47;87H[?12l[?25h[?25l[J[49d[?12l[?25h[49;1H[?1049l[23;0;0t[?1l>[?2004l]0;njb0130@cell01-cse: ~/SystProg/rec03njb0130@cell01-cse:~/SystProg/rec03$ sed[K[K[Kls
+ audio.cpp   dvd.h           items.h   [0m[01;34mLab05[0m   [01;34mLab10[0m      loans.cpp    patron.cpp
+ audio.h     Homework3.exe   [01;34mLab01[0m     [01;34mlab06[0m   [01;34mLab11[0m      loans.h      patron.h
+ book.cpp    item.cpp        [01;34mLab02[0m     [01;34mlab07[0m   [01;34mLabEC[0m      main.cpp     patrons.cpp
+ book.h      item.h          [01;34mLab03[0m     [01;34mLab08[0m   loan.cpp   Makefile     patrons.h
+ dvd.cpp     items.cpp       [01;34mLab04[0m     [01;34mLab09[0m   loan.h    '[options]'   sedfile.txt
+]0;njb0130@cell01-cse: ~/SystProg/rec03njb0130@cell01-cse:~/SystProg/rec03$ sed -n 1, 1[K[K10p sedfile.txt
+total 236
+Rrw-r--r-- 1 njb0130 domain^users   1441 Apr 18  2021 audio.cpp
+Rrw-r--r-- 1 njb0130 domain^users    699 Apr 18  2021 audio.h
+Rrw-r--r-- 1 njb0130 domain^users   1272 Apr 18  2021 book.cpp
+Rrw-r--r-- 1 njb0130 domain^users    626 Apr 19  2021 book.h
+Rrw-r--r-- 1 njb0130 domain^users   1444 Apr 18  2021 dvd.cpp
+Rrw-r--r-- 1 njb0130 domain^users    688 Apr 18  2021 dvd.h
+Rrw-r--r-- 1 njb0130 domain^users 105188 Apr 19  2021 Homework3.exe
+Rrw-r--r-- 1 njb0130 domain^users    852 Apr 18  2021 item.cpp
+Rrw-r--r-- 1 njb0130 domain^users    424 Apr 18  2021 item.h
+]0;njb0130@cell01-cse: ~/SystProg/rec03njb0130@cell01-cse:~/SystProg/rec03$ sed -n 1,10p sedfile.txt[1P sedfile.txt[1P sedfile.txt[1P sedfile.txt[1P sedfile.txt[1P sedfile.txt[1Psedfile.txt[1P sedfile.txti sedfile.txt[C sedfile.txt1 sedfile.txtd sedfile.txt[C sedfile.txt
+]0;njb0130@cell01-cse: ~/SystProg/rec03njb0130@cell01-cse:~/SystProg/rec03$ sed -i 1d  sedfile.txt[2@n 1,10p[C[C[C[C[C[C[C[C[C[C[C[C
+Rrw-r--r-- 1 njb0130 domain^users   1441 Apr 18  2021 audio.cpp
+Rrw-r--r-- 1 njb0130 domain^users    699 Apr 18  2021 audio.h
+Rrw-r--r-- 1 njb0130 domain^users   1272 Apr 18  2021 book.cpp
+Rrw-r--r-- 1 njb0130 domain^users    626 Apr 19  2021 book.h
+Rrw-r--r-- 1 njb0130 domain^users   1444 Apr 18  2021 dvd.cpp
+Rrw-r--r-- 1 njb0130 domain^users    688 Apr 18  2021 dvd.h
+Rrw-r--r-- 1 njb0130 domain^users 105188 Apr 19  2021 Homework3.exe
+Rrw-r--r-- 1 njb0130 domain^users    852 Apr 18  2021 item.cpp
+Rrw-r--r-- 1 njb0130 domain^users    424 Apr 18  2021 item.h
+Rrw-r--r-- 1 njb0130 domain^users   3585 Apr 18  2021 items.cpp
+]0;njb0130@cell01-cse: ~/SystProg/rec03njb0130@cell01-cse:~/SystProg/rec03$ sed -n 1,10p sedfile.txt[C[2Pi 1d [C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1P[1@'[1@/[1@/[1@a[C[C sedfile.txt[1@T[1@h[1@i[1@s[C[C sedfile.txt[1@a[C[C sedfile.txt[1@n[1P[1@n[1@e[1@w[1@'[1@i[1@s[1@ [C[C[C[C[C[1@l[1P[1@ [1@l[1@i[1@n[1@eDiscuss  different  types  of  digital  processors  in  detail?  Write  at  least  5  points  for  each.  (25 '  sedfile.txt[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+2. Which gates are considered universal gates and explain why? (25 Points) 
+3. Differentiate  between  ASIC,  Microprocessor,  and  SoC.  Give  at  least  five  differences.  (25 
+Points) 
+4. Discuss at least 5 different applications where FPGA is used. Describe in detail the significance 
+and how FPGA is used in those applications.  (25 Points)sed: -e expression #1, char 0: no previous regular expression
+]0;njb0130@cell01-cse: ~/SystProg/rec03njb0130@cell01-cse:~/SystProg/rec03$ Points)
+bash: syntax error near unexpected token `)'
+]0;njb0130@cell01-cse: ~/SystProg/rec03njb0130@cell01-cse:~/SystProg/rec03$ 2. Which gates are considered universal gates and explain why? (25 Points) 
+bash: syntax error near unexpected token `('
+]0;njb0130@cell01-cse: ~/SystProg/rec03njb0130@cell01-cse:~/SystProg/rec03$ 3. Differentiate  between  ASIC,  Microprocessor,  and  SoC.  Give  at  least  five  differences.  (25 
+bash: syntax error near unexpected token `('
+]0;njb0130@cell01-cse: ~/SystProg/rec03njb0130@cell01-cse:~/SystProg/rec03$ Points) 
+bash: syntax error near unexpected token `)'
+]0;njb0130@cell01-cse: ~/SystProg/rec03njb0130@cell01-cse:~/SystProg/rec03$ 4. Discuss at least 5 different applications where FPGA is used. Describe in detail the significance 
+4.: command not found
+]0;njb0130@cell01-cse: ~/SystProg/rec03njb0130@cell01-cse:~/SystProg/rec03$ and how FPGA is used in those applications.  (25 Points) [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K4. Discuss at least 5 different applications where FPGA is used. Describe in detail the significance [APoints) [K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C3. Differentiate  between  ASIC,  Microprocessor,  and  SoC.  Give  at  least  five  differences.  (25 [A2. Which gates are considered universal gates and explain[28P why? (25 Points)[C[A]0;njb0130@cell01-cse: ~/SystProg/rec03njb0130@cell01-cse:~/SystProg/rec03$ Points)[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csed -i '//a This is a new lineDiscuss  different  types  of  digital  processors  in  detail?  Write  at  least  5  points  for  each.  (25 '  sedfile.txt[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K' sedfile.txt[C[1@A[1@p[1@r[1@ [1@1[1@8
+]0;njb0130@cell01-cse: ~/SystProg/rec03njb0130@cell01-cse:~/SystProg/rec03$ sed -i '/Apr 18/a This is a new line' sedfile.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C4. Discuss at least 5 different applications where FPGA is used. Describe in detail the significance [APoints) [K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C3. Differentiate  between  ASIC,  Microprocessor,  and  SoC.  Give  at  least  five  differences.  (25 [A2. Which gates are considered universal gates and explain[28P why? (25 Points)[C[A]0;njb0130@cell01-cse: ~/SystProg/rec03njb0130@cell01-cse:~/SystProg/rec03$ Points)[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csed -i '//a This is a new lineDiscuss  different  types  of  digital  processors  in  detail?  Write  at  least  5  points  for  each.  (25 '  sedfile.txt[A[A]0;njb0130@cell01-cse: ~/SystProg/rec03njb0130@cell01-cse:~/SystProg/rec03$ [C[C[C[C[C[32Pn 1,10p sedfile.txt
+[K
+[K[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+Rrw-r--r-- 1 njb0130 domain^users   1441 Apr 18  2021 audio.cpp
+This is a new line
+Rrw-r--r-- 1 njb0130 domain^users    699 Apr 18  2021 audio.h
+This is a new line
+Rrw-r--r-- 1 njb0130 domain^users   1272 Apr 18  2021 book.cpp
+This is a new line
+Rrw-r--r-- 1 njb0130 domain^users    626 Apr 19  2021 book.h
+Rrw-r--r-- 1 njb0130 domain^users   1444 Apr 18  2021 dvd.cpp
+This is a new line
+Rrw-r--r-- 1 njb0130 domain^users    688 Apr 18  2021 dvd.h
+]0;njb0130@cell01-cse: ~/SystProg/rec03njb0130@cell01-cse:~/SystProg/rec03$ ps -ef > gawkfile.txt
+]0;njb0130@cell01-cse: ~/SystProg/rec03njb0130@cell01-cse:~/SystProg/rec03$ gawk 'NR <= 10' gawkfile.txt
+UID          PID    PPID  C STIME TTY          TIME CMD
+root           1       0  0 Aug28 ?        01:13:49 /sbin/init splash
+root           2       0  0 Aug28 ?        00:00:02 [kthreadd]
+root           3       2  0 Aug28 ?        00:00:00 [rcu_gp]
+root           4       2  0 Aug28 ?        00:00:00 [rcu_par_gp]
+root           5       2  0 Aug28 ?        00:00:00 [netns]
+root           7       2  0 Aug28 ?        00:00:00 [kworker/0:0H-events_highpri]
+root          10       2  0 Aug28 ?        00:00:00 [mm_percpu_wq]
+root          11       2  0 Aug28 ?        00:00:00 [rcu_tasks_rude_]
+root          12       2  0 Aug28 ?        00:00:00 [rcu_tasks_trace]
+]0;njb0130@cell01-cse: ~/SystProg/rec03njb0130@cell01-cse:~/SystProg/rec03$ info ps
+[?1h=[?1049h[22;0;0t[H[2J[49;1HNo menu item 'ps' in node '(dir)Top'[48;1H[7m-----Info: (*manpages*)ps, 1095 lines --Top--------------------------------------------------[0m[1;1HPS(1)                                  User Commands                                 PS(1)[3;1HNAME[4;1H       ps - report a snapshot of the current processes.[6;1HSYNOPSIS[7;1H       ps [options][9;1HDESCRIPTION[10;1H       ps displays information about a selection of the active processes.  If you want a[11;1H       repetitive update of the selection and the displayed information, use [4mtop(1)[24m[K[12;1H       instead.[14;1H       This version of ps accepts several kinds of options:[16;1H       1   UNIX options, which may be grouped and must be preceded by a dash.[17;1H       2   BSD options, which may be grouped and must not be used with a dash.[18;1H       3   GNU long options, which are preceded by two dashes.[20;1H       Options of different types may be freely mixed, but conflicts can appear.  There[21;1H       are some synonymous options, which are functionally identical, due to the many[22;1H       standards and ps implementations that this ps is compatible with.[24;1H       Note that "ps -aux" is distinct from "ps aux".  The POSIX and UNIX standards[25;1H       require that "ps -aux" print all processes owned by a user named "x", as well as[26;1H       printing all processes that would be selected by the -a option.  If the user named[27;1H       "x" does not exist, this ps may interpret the command as "ps aux" instead and print[28;1H       a warning.  This behavior is intended to aid in transitioning old scripts and[29;1H       habits.  It is fragile, subject to change, and thus should not be relied upon.[31;1H       By default, ps selects all processes with the same effective user ID (euid=EUID) as[32;1H       the current user and associated with the same terminal as the invoker.  It displays[33;1H       the process ID (pid=PID), the terminal associated with the process (tname=TTY), the[34;1H       cumulated CPU time in [DD-]hh:mm:ss format (time=TIME), and the executable name[35;1H       (ucmd=CMD).  Output is unsorted by default.[37;1H       The use of BSD-style options will add process state (stat=STAT) to the default[38;1H       display and show the command args (args=COMMAND) instead of the executable name.[39;1H       You can override this with the PS_FORMAT environment variable.  The use of[40;1H       BSD-style options will also change the process selection to include processes on[41;1H       other terminals (TTYs) that are owned by you; alternately, this may be described as[42;1H       setting the selection to be the set of all processes filtered to exclude processes[43;1H       owned by other users or not on a terminal.  These effects are not considered when[44;1H       options are described as being "identical" below, so -M will be considered[45;1H       identical to Z and so on.[47;1H       Except as described below, process selection options are additive.  The default[1;1H[1;1H[49;1H[K[1;1H[1;1H[1;1H[49;1H[K[?1l>[?1049l[23;0;0t
+[2]+  Stopped                 info ps
+]0;njb0130@cell01-cse: ~/SystProg/rec03njb0130@cell01-cse:~/SystProg/rec03$ gawk 'END {print NR}' gawkfile.txt
+1040
+]0;njb0130@cell01-cse: ~/SystProg/rec03njb0130@cell01-cse:~/SystProg/rec03$ whoami
+njb0130
+]0;njb0130@cell01-cse: ~/SystProg/rec03njb0130@cell01-cse:~/SystProg/rec03$ gawk '/njb0130/ {print NR, $0}' gawkfile.txt[C
+841 root     2999598     966  0 21:15 ?        00:00:00 sshd: njb0130 [priv]
+842 njb0130  2999672       1  0 21:16 ?        00:00:00 /lib/systemd/systemd --user
+843 njb0130  2999676 2999672  0 21:16 ?        00:00:00 (sd-pam)
+844 njb0130  2999687 2999672  0 21:16 ?        00:00:00 /usr/libexec/tracker-miner-fs
+845 njb0130  2999699 2999672  0 21:16 ?        00:00:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+846 njb0130  2999752 2999672  0 21:16 ?        00:00:00 /usr/libexec/gvfsd
+847 njb0130  2999758 2999672  0 21:16 ?        00:00:00 /usr/libexec/gvfsd-fuse /run/user/1633570238/gvfs -f -o big_writes
+848 njb0130  2999761 2999672  0 21:16 ?        00:00:00 /usr/libexec/gvfs-udisks2-volume-monitor
+849 njb0130  2999762 2999598  0 21:16 ?        00:00:00 sshd: njb0130@pts/19
+850 njb0130  2999773 2999672  0 21:16 ?        00:00:00 /usr/libexec/gvfs-goa-volume-monitor
+851 njb0130  2999777 2999672  0 21:16 ?        00:00:00 /usr/libexec/goa-daemon
+852 njb0130  2999787 2999672  0 21:16 ?        00:00:00 /usr/libexec/goa-identity-service
+853 njb0130  2999789 2999672  0 21:16 ?        00:00:00 /usr/bin/gnome-keyring-daemon --start --foreground --components=secrets
+854 njb0130  2999797 2999672  0 21:16 ?        00:00:00 /usr/libexec/gvfs-gphoto2-volume-monitor
+855 njb0130  2999802 2999672  0 21:16 ?        00:00:00 /usr/libexec/gvfs-mtp-volume-monitor
+856 njb0130  2999806 2999672  0 21:16 ?        00:00:00 /usr/libexec/gvfs-afc-volume-monitor
+857 njb0130  2999823 2999762  0 21:16 pts/19   00:00:00 -bash
+859 njb0130  3000125 2999672  0 21:17 ?        00:00:00 /usr/libexec/gvfsd-metadata
+913 root     3001537     966  0 21:22 ?        00:00:00 sshd: njb0130 [priv]
+916 njb0130  3001690 3001537  0 21:22 ?        00:00:00 sshd: njb0130@notty
+917 njb0130  3001709 3001690  0 21:23 ?        00:00:00 /usr/lib/openssh/sftp-server
+957 njb0130  3003899 2999823  0 21:28 pts/19   00:00:00 nano script.txt
+960 njb0130  3003917 2999823  0 21:28 pts/19   00:00:00 script [options] script.txt
+961 njb0130  3003918 3003917  0 21:28 pts/21   00:00:00 bash -i
+977 njb0130  3004222 3003918  0 21:29 pts/21   00:00:00 nano sedfile.txt
+1030 njb0130  3005638 2999672  0 21:38 ?        00:00:00 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+1040 njb0130  3005754 3003918  0 21:39 pts/21   00:00:00 ps -ef
+]0;njb0130@cell01-cse: ~/SystProg/rec03njb0130@cell01-cse:~/SystProg/rec03$ gawk '/njb0130/ {print NR, $0}' gawkfile.txt[1@$[1@1[1@ [1@~[1@ 
+842 njb0130  2999672       1  0 21:16 ?        00:00:00 /lib/systemd/systemd --user
+843 njb0130  2999676 2999672  0 21:16 ?        00:00:00 (sd-pam)
+844 njb0130  2999687 2999672  0 21:16 ?        00:00:00 /usr/libexec/tracker-miner-fs
+845 njb0130  2999699 2999672  0 21:16 ?        00:00:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+846 njb0130  2999752 2999672  0 21:16 ?        00:00:00 /usr/libexec/gvfsd
+847 njb0130  2999758 2999672  0 21:16 ?        00:00:00 /usr/libexec/gvfsd-fuse /run/user/1633570238/gvfs -f -o big_writes
+848 njb0130  2999761 2999672  0 21:16 ?        00:00:00 /usr/libexec/gvfs-udisks2-volume-monitor
+849 njb0130  2999762 2999598  0 21:16 ?        00:00:00 sshd: njb0130@pts/19
+850 njb0130  2999773 2999672  0 21:16 ?        00:00:00 /usr/libexec/gvfs-goa-volume-monitor
+851 njb0130  2999777 2999672  0 21:16 ?        00:00:00 /usr/libexec/goa-daemon
+852 njb0130  2999787 2999672  0 21:16 ?        00:00:00 /usr/libexec/goa-identity-service
+853 njb0130  2999789 2999672  0 21:16 ?        00:00:00 /usr/bin/gnome-keyring-daemon --start --foreground --components=secrets
+854 njb0130  2999797 2999672  0 21:16 ?        00:00:00 /usr/libexec/gvfs-gphoto2-volume-monitor
+855 njb0130  2999802 2999672  0 21:16 ?        00:00:00 /usr/libexec/gvfs-mtp-volume-monitor
+856 njb0130  2999806 2999672  0 21:16 ?        00:00:00 /usr/libexec/gvfs-afc-volume-monitor
+857 njb0130  2999823 2999762  0 21:16 pts/19   00:00:00 -bash
+859 njb0130  3000125 2999672  0 21:17 ?        00:00:00 /usr/libexec/gvfsd-metadata
+916 njb0130  3001690 3001537  0 21:22 ?        00:00:00 sshd: njb0130@notty
+917 njb0130  3001709 3001690  0 21:23 ?        00:00:00 /usr/lib/openssh/sftp-server
+957 njb0130  3003899 2999823  0 21:28 pts/19   00:00:00 nano script.txt
+960 njb0130  3003917 2999823  0 21:28 pts/19   00:00:00 script [options] script.txt
+961 njb0130  3003918 3003917  0 21:28 pts/21   00:00:00 bash -i
+977 njb0130  3004222 3003918  0 21:29 pts/21   00:00:00 nano sedfile.txt
+1030 njb0130  3005638 2999672  0 21:38 ?        00:00:00 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+1040 njb0130  3005754 3003918  0 21:39 pts/21   00:00:00 ps -ef
+]0;njb0130@cell01-cse: ~/SystProg/rec03njb0130@cell01-cse:~/SystProg/rec03$ gawk '$1 ~ /njb0130/ {print NR, $0}' gawkfile.txt[C[C[C[1P[1P[1@N[1@F[1@\[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1@N[1@F[1@ [1@>[1@ [1@8[1@ 
+2 9
+170 10
+176 10
+177 9
+178 14
+179 9
+180 9
+181 10
+182 9
+183 10
+187 12
+188 10
+190 9
+191 9
+192 10
+194 9
+195 9
+196 9
+197 9
+198 9
+201 9
+202 10
+204 13
+205 14
+206 9
+207 9
+208 12
+209 12
+212 11
+213 12
+217 9
+220 9
+223 15
+228 12
+229 23
+231 9
+232 9
+248 12
+250 9
+255 10
+256 9
+259 14
+261 12
+268 9
+270 10
+272 9
+274 10
+276 9
+278 10
+280 14
+282 12
+287 11
+291 10
+292 9
+295 10
+296 9
+298 10
+299 14
+301 12
+308 9
+313 10
+314 9
+316 14
+318 12
+322 9
+330 10
+331 10
+332 9
+335 14
+337 12
+341 9
+343 11
+348 10
+349 9
+352 14
+354 12
+356 9
+360 11
+365 9
+366 24
+367 10
+368 10
+371 9
+374 14
+376 12
+381 11
+386 10
+387 9
+389 10
+390 9
+393 14
+395 12
+397 9
+401 11
+407 10
+408 10
+415 9
+418 14
+420 12
+425 11
+429 10
+430 9
+432 10
+433 9
+436 9
+438 10
+439 9
+442 14
+444 12
+449 11
+454 10
+455 9
+458 14
+459 9
+461 12
+466 11
+471 9
+474 14
+476 12
+481 11
+485 10
+486 9
+489 14
+491 12
+496 11
+497 9
+502 10
+503 9
+506 14
+508 12
+510 9
+514 11
+519 10
+520 9
+523 10
+524 9
+526 14
+528 12
+529 9
+540 10
+541 9
+544 14
+546 12
+548 9
+552 11
+557 9
+558 10
+559 9
+562 14
+564 12
+566 9
+570 11
+575 10
+576 9
+578 10
+579 9
+582 14
+584 12
+586 9
+590 11
+595 10
+596 9
+599 14
+601 12
+603 9
+613 9
+614 10
+615 9
+618 14
+620 12
+622 9
+626 11
+631 10
+632 9
+635 14
+637 12
+642 11
+646 9
+648 10
+649 9
+651 10
+652 9
+655 14
+657 12
+659 9
+663 11
+669 10
+670 9
+672 11
+673 10
+674 9
+677 10
+678 9
+680 10
+681 9
+684 9
+685 9
+688 14
+690 12
+695 11
+700 10
+701 9
+703 10
+704 9
+705 9
+708 14
+710 12
+712 9
+716 11
+721 10
+722 9
+725 14
+727 12
+731 9
+733 11
+738 10
+739 9
+742 14
+744 12
+746 9
+750 11
+754 10
+756 9
+759 14
+761 12
+763 9
+767 11
+774 10
+775 9
+777 14
+779 12
+781 9
+789 9
+792 10
+793 9
+796 14
+798 12
+802 9
+804 11
+809 10
+810 9
+813 14
+815 12
+817 9
+821 11
+826 10
+827 9
+829 10
+830 9
+832 9
+834 10
+835 9
+837 9
+838 10
+839 9
+841 10
+842 9
+845 14
+847 12
+849 9
+853 11
+858 10
+860 9
+863 14
+865 12
+869 9
+871 11
+877 10
+878 9
+881 14
+883 12
+885 9
+889 11
+894 10
+895 9
+899 14
+901 12
+903 9
+907 11
+913 10
+914 10
+915 10
+916 9
+918 9
+920 10
+921 9
+923 14
+925 12
+927 9
+935 9
+939 10
+940 9
+943 14
+945 12
+946 9
+951 11
+957 9
+958 10
+959 9
+960 10
+961 9
+964 14
+966 12
+968 9
+972 11
+977 9
+978 9
+982 9
+983 10
+986 9
+989 14
+991 12
+996 9
+997 11
+1002 10
+1003 10
+1004 10
+1005 10
+1006 10
+1007 10
+1008 10
+1009 10
+1010 10
+1011 10
+1012 10
+1013 10
+1014 10
+1015 10
+1016 10
+1017 10
+1018 10
+1019 10
+1020 9
+1021 10
+1022 10
+1023 10
+1024 10
+1025 10
+1026 10
+1027 10
+1028 10
+1029 10
+1030 10
+1031 10
+1032 10
+1033 9
+1034 9
+1035 10
+1036 9
+1040 9
+]0;njb0130@cell01-cse: ~/SystProg/rec03njb0130@cell01-cse:~/SystProg/rec03$ gawk 'NF > 8 {print NR, NF}' gawkfile.txt[C[1@f[1@o[1@r[1@([1@i[1@ [1@=[1@ [1@9[1@;[1@ [1@i[1@ [1@<=print NR, NF}' gawkfile.txt [A]0;njb0130@cell01-cse: ~/SystProg/rec03njb0130@cell01-cse:~/SystProg/rec03$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C print NR, NF}' gawkfile.txt[A]0;njb0130@cell01-cse: ~/SystProg/rec03njb0130@cell01-cse:~/SystProg/rec03$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CNprint NR, NF}' gawkfile.txt[A]0;njb0130@cell01-cse: ~/SystProg/rec03njb0130@cell01-cse:~/SystProg/rec03$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CFprint NR, NF}' gawkfile.txt[A]0;njb0130@cell01-cse: ~/SystProg/rec03njb0130@cell01-cse:~/SystProg/rec03$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C;print NR, NF}' gawkfile.txt[A]0;njb0130@cell01-cse: ~/SystProg/rec03njb0130@cell01-cse:~/SystProg/rec03$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C print NR, NF}' gawkfile.txt[A]0;njb0130@cell01-cse: ~/SystProg/rec03njb0130@cell01-cse:~/SystProg/rec03$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ciprint NR, NF}' gawkfile.txt[A]0;njb0130@cell01-cse: ~/SystProg/rec03njb0130@cell01-cse:~/SystProg/rec03$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C+print NR, NF}' gawkfile.txt[A]0;njb0130@cell01-cse: ~/SystProg/rec03njb0130@cell01-cse:~/SystProg/rec03$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C+print NR, NF}' gawkfile.txt[A]0;njb0130@cell01-cse: ~/SystProg/rec03njb0130@cell01-cse:~/SystProg/rec03$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C)print NR, NF}' gawkfile.txt[A]0;njb0130@cell01-cse: ~/SystProg/rec03njb0130@cell01-cse:~/SystProg/rec03$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C print NR, NF}' gawkfile.txt[A]0;njb0130@cell01-cse: ~/SystProg/rec03njb0130@cell01-cse:~/SystProg/rec03$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C,}' gawkfile.txt[A]0;njb0130@cell01-cse: ~/SystProg/rec03njb0130@cell01-cse:~/SystProg/rec03$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C }' gawkfile.txt[A]0;njb0130@cell01-cse: ~/SystProg/rec03njb0130@cell01-cse:~/SystProg/rec03$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C$}' gawkfile.txt[A]0;njb0130@cell01-cse: ~/SystProg/rec03njb0130@cell01-cse:~/SystProg/rec03$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ci}' gawkfile.txt[A]0;njb0130@cell01-cse: ~/SystProg/rec03njb0130@cell01-cse:~/SystProg/rec03$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+2 9 splash
+170 10 -f
+170 10 -w
+176 10 running
+176 10 [cell01-cse.local]
+177 9 -f
+178 14 --system
+178 14 --address=systemd:
+178 14 --nofork
+178 14 --nopidfile
+178 14 --systemd-activation
+178 14 --syslog-only
+179 9 --no-daemon
+180 9 --foreground
+181 10 /usr/bin/networkd-dispatcher
+181 10 --run-startup-triggers
+182 9 --no-debug
+183 10 -n
+183 10 -iNONE
+187 12 -u
+187 12 -s
+187 12 -O
+187 12 /run/wpa_supplicant
+188 10 chroot
+188 10 helper
+190 9 --start-as-daemon
+191 9 lwreg
+192 10 /usr/share/unattended-upgrades/unattended-upgrade-shutdown
+192 10 --wait-for-signal
+194 9 [pam/gdm-launch-environment]
+195 9 eventlog
+196 9 -f
+197 9 netlogon
+198 9 --user
+201 9 lwio
+202 10 --daemonize=no
+202 10 --log-target=journal
+204 13 dbus-run-session
+204 13 --
+204 13 gnome-session
+204 13 --autostart
+204 13 /usr/share/gdm/greeter/autostart
+205 14 --session
+205 14 --address=systemd:
+205 14 --nofork
+205 14 --nopidfile
+205 14 --systemd-activation
+205 14 --syslog-only
+206 9 lsass
+207 9 callback]
+208 12 --
+208 12 gnome-session
+208 12 --autostart
+208 12 /usr/share/gdm/greeter/autostart
+209 12 --nofork
+209 12 --print-address
+209 12 4
+209 12 --session
+212 11 --systemd
+212 11 --autostart
+212 11 /usr/share/gdm/greeter/autostart
+213 12 /run/user/125/gvfs
+213 12 -f
+213 12 -o
+213 12 big_writes
+217 9 reapsysl
+220 9 --test
+223 15 /usr/sbin/sshd
+223 15 -D
+223 15 [listener]
+223 15 0
+223 15 of
+223 15 10-100
+223 15 startups
+228 12 --config-file=/usr/share/defaults/at-spi2/accessibility.conf
+228 12 --nofork
+228 12 --print-address
+228 12 3
+229 23 :1024
+229 23 -rootless
+229 23 -noreset
+229 23 -accessx
+229 23 -core
+229 23 -auth
+229 23 /run/user/125/.mutter-Xwaylandauth.8TNBR1
+229 23 -listen
+229 23 4
+229 23 -listen
+229 23 5
+229 23 -displayfd
+229 23 6
+229 23 -listen
+229 23 7
+231 9 /usr/share/gnome-shell/org.gnome.Shell.Notifications
+232 9 --use-gnome-session
+248 12 --panel
+248 12 disable
+248 12 -r
+248 12 --xim
+250 9 --kill-daemon
+255 10 cengadmin
+255 10 [priv]
+256 9 --user
+259 14 --session
+259 14 --address=systemd:
+259 14 --nofork
+259 14 --nopidfile
+259 14 --systemd-activation
+259 14 --syslog-only
+261 12 /run/user/1000/gvfs
+261 12 -f
+261 12 -o
+261 12 big_writes
+268 9 cengadmin@pts/47
+270 10 cengadmin
+270 10 [priv]
+272 9 cengadmin@notty
+274 10 --daemonize=no
+274 10 --log-target=journal
+276 9 --user
+278 10 --daemonize=no
+278 10 --log-target=journal
+280 14 --session
+280 14 --address=systemd:
+280 14 --nofork
+280 14 --nopidfile
+280 14 --systemd-activation
+280 14 --syslog-only
+282 12 /run/user/1633225244/gvfs
+282 12 -f
+282 12 -o
+282 12 big_writes
+287 11 --start
+287 11 --foreground
+287 11 --components=secrets
+291 10 gm0505
+291 10 [priv]
+292 9 gm0505@pts/27
+295 10 sd0717
+295 10 [priv]
+296 9 --user
+298 10 --daemonize=no
+298 10 --log-target=journal
+299 14 --session
+299 14 --address=systemd:
+299 14 --nofork
+299 14 --nopidfile
+299 14 --systemd-activation
+299 14 --syslog-only
+301 12 /run/user/1633618635/gvfs
+301 12 -f
+301 12 -o
+301 12 big_writes
+308 9 sd0717@pts/6
+313 10 sr1074
+313 10 [priv]
+314 9 --user
+316 14 --session
+316 14 --address=systemd:
+316 14 --nofork
+316 14 --nopidfile
+316 14 --systemd-activation
+316 14 --syslog-only
+318 12 /run/user/1633190216/gvfs
+318 12 -f
+318 12 -o
+318 12 big_writes
+322 9 sr1074@pts/0
+330 10 --daemonize=no
+330 10 --log-target=journal
+331 10 unt\\brb0164
+331 10 [priv]
+332 9 --user
+335 14 --session
+335 14 --address=systemd:
+335 14 --nofork
+335 14 --nopidfile
+335 14 --systemd-activation
+335 14 --syslog-only
+337 12 /run/user/707345681/gvfs
+337 12 -f
+337 12 -o
+337 12 big_writes
+341 9 UNT\\brb0164@pts/5
+343 11 --start
+343 11 --foreground
+343 11 --components=secrets
+348 10 UNT\\bj0141
+348 10 [priv]
+349 9 --user
+352 14 --session
+352 14 --address=systemd:
+352 14 --nofork
+352 14 --nopidfile
+352 14 --systemd-activation
+352 14 --syslog-only
+354 12 /run/user/707734448/gvfs
+354 12 -f
+354 12 -o
+354 12 big_writes
+356 9 UNT\\bj0141@pts/13
+360 11 --start
+360 11 --foreground
+360 11 --components=secrets
+365 9 brb0164@cse01.cse.unt.edu
+366 24 -oForwardX11
+366 24 no
+366 24 -oForwardAgent
+366 24 no
+366 24 -oPermitLocalCommand
+366 24 no
+366 24 -oClearAllForwardings
+366 24 yes
+366 24 -l
+366 24 brb0164
+366 24 -oProtocol
+366 24 2
+366 24 -s
+366 24 --
+366 24 cse01.cse.unt.edu
+366 24 sftp
+367 10 --daemonize=no
+367 10 --log-target=journal
+368 10 --daemonize=no
+368 10 --log-target=journal
+371 9 --user
+374 14 --session
+374 14 --address=systemd:
+374 14 --nofork
+374 14 --nopidfile
+374 14 --systemd-activation
+374 14 --syslog-only
+376 12 /run/user/1633251114/gvfs
+376 12 -f
+376 12 -o
+376 12 big_writes
+381 11 --start
+381 11 --foreground
+381 11 --components=secrets
+386 10 bnm0162
+386 10 [priv]
+387 9 bnm0162@notty
+389 10 unt\\dmk0080
+389 10 [priv]
+390 9 --user
+393 14 --session
+393 14 --address=systemd:
+393 14 --nofork
+393 14 --nopidfile
+393 14 --systemd-activation
+393 14 --syslog-only
+395 12 /run/user/707276057/gvfs
+395 12 -f
+395 12 -o
+395 12 big_writes
+397 9 UNT\\dmk0080@notty
+401 11 --start
+401 11 --foreground
+401 11 --components=secrets
+407 10 --daemonize=no
+407 10 --log-target=journal
+408 10 --daemonize=no
+408 10 --log-target=journal
+415 9 --user
+418 14 --session
+418 14 --address=systemd:
+418 14 --nofork
+418 14 --nopidfile
+418 14 --systemd-activation
+418 14 --syslog-only
+420 12 /run/user/1633263980/gvfs
+420 12 -f
+420 12 -o
+420 12 big_writes
+425 11 --start
+425 11 --foreground
+425 11 --components=secrets
+429 10 aaa1058
+429 10 [priv]
+430 9 aaa1058@notty
+432 10 aaa1058
+432 10 [priv]
+433 9 aaa1058@notty
+436 9 -l
+438 10 --daemonize=no
+438 10 --log-target=journal
+439 9 --user
+442 14 --session
+442 14 --address=systemd:
+442 14 --nofork
+442 14 --nopidfile
+442 14 --systemd-activation
+442 14 --syslog-only
+444 12 /run/user/1633565523/gvfs
+444 12 -f
+444 12 -o
+444 12 big_writes
+449 11 --start
+449 11 --foreground
+449 11 --components=secrets
+454 10 ag1425
+454 10 [priv]
+455 9 --user
+458 14 --session
+458 14 --address=systemd:
+458 14 --nofork
+458 14 --nopidfile
+458 14 --systemd-activation
+458 14 --syslog-only
+459 9 ag1425@pts/20
+461 12 /run/user/1633648101/gvfs
+461 12 -f
+461 12 -o
+461 12 big_writes
+466 11 --start
+466 11 --foreground
+466 11 --components=secrets
+471 9 --user
+474 14 --session
+474 14 --address=systemd:
+474 14 --nofork
+474 14 --nopidfile
+474 14 --systemd-activation
+474 14 --syslog-only
+476 12 /run/user/1633597194/gvfs
+476 12 -f
+476 12 -o
+476 12 big_writes
+481 11 --start
+481 11 --foreground
+481 11 --components=secrets
+485 10 jes0393
+485 10 [priv]
+486 9 --user
+489 14 --session
+489 14 --address=systemd:
+489 14 --nofork
+489 14 --nopidfile
+489 14 --systemd-activation
+489 14 --syslog-only
+491 12 /run/user/1633437168/gvfs
+491 12 -f
+491 12 -o
+491 12 big_writes
+496 11 --start
+496 11 --foreground
+496 11 --components=secrets
+497 9 jes0393@pts/8
+502 10 jar0582
+502 10 [priv]
+503 9 --user
+506 14 --session
+506 14 --address=systemd:
+506 14 --nofork
+506 14 --nopidfile
+506 14 --systemd-activation
+506 14 --syslog-only
+508 12 /run/user/1633275540/gvfs
+508 12 -f
+508 12 -o
+508 12 big_writes
+510 9 jar0582@pts/22
+514 11 --start
+514 11 --foreground
+514 11 --components=secrets
+519 10 jes0393
+519 10 [priv]
+520 9 jes0393@notty
+523 10 mp0841
+523 10 [priv]
+524 9 --user
+526 14 --session
+526 14 --address=systemd:
+526 14 --nofork
+526 14 --nopidfile
+526 14 --systemd-activation
+526 14 --syslog-only
+528 12 /run/user/1633660714/gvfs
+528 12 -f
+528 12 -o
+528 12 big_writes
+529 9 mp0841@pts/15
+540 10 jfw0085
+540 10 [priv]
+541 9 --user
+544 14 --session
+544 14 --address=systemd:
+544 14 --nofork
+544 14 --nopidfile
+544 14 --systemd-activation
+544 14 --syslog-only
+546 12 /run/user/1633653505/gvfs
+546 12 -f
+546 12 -o
+546 12 big_writes
+548 9 jfw0085@pts/10
+552 11 --start
+552 11 --foreground
+552 11 --components=secrets
+557 9 project1.py
+558 10 mrc0391
+558 10 [priv]
+559 9 --user
+562 14 --session
+562 14 --address=systemd:
+562 14 --nofork
+562 14 --nopidfile
+562 14 --systemd-activation
+562 14 --syslog-only
+564 12 /run/user/1633158932/gvfs
+564 12 -f
+564 12 -o
+564 12 big_writes
+566 9 mrc0391@pts/4
+570 11 --start
+570 11 --foreground
+570 11 --components=secrets
+575 10 jmh0834
+575 10 [priv]
+576 9 jmh0834@notty
+578 10 asn0067
+578 10 [priv]
+579 9 --user
+582 14 --session
+582 14 --address=systemd:
+582 14 --nofork
+582 14 --nopidfile
+582 14 --systemd-activation
+582 14 --syslog-only
+584 12 /run/user/1633187906/gvfs
+584 12 -f
+584 12 -o
+584 12 big_writes
+586 9 asn0067@pts/36
+590 11 --start
+590 11 --foreground
+590 11 --components=secrets
+595 10 kr1148
+595 10 [priv]
+596 9 --user
+599 14 --session
+599 14 --address=systemd:
+599 14 --nofork
+599 14 --nopidfile
+599 14 --systemd-activation
+599 14 --syslog-only
+601 12 /run/user/1633517201/gvfs
+601 12 -f
+601 12 -o
+601 12 big_writes
+603 9 kr1148@pts/42
+613 9 q3.c
+614 10 bxp0005
+614 10 [priv]
+615 9 --user
+618 14 --session
+618 14 --address=systemd:
+618 14 --nofork
+618 14 --nopidfile
+618 14 --systemd-activation
+618 14 --syslog-only
+620 12 /run/user/1633548543/gvfs
+620 12 -f
+620 12 -o
+620 12 big_writes
+622 9 bxp0005@pts/17
+626 11 --start
+626 11 --foreground
+626 11 --components=secrets
+631 10 ao0296
+631 10 [priv]
+632 9 --user
+635 14 --session
+635 14 --address=systemd:
+635 14 --nofork
+635 14 --nopidfile
+635 14 --systemd-activation
+635 14 --syslog-only
+637 12 /run/user/1633326434/gvfs
+637 12 -f
+637 12 -o
+637 12 big_writes
+642 11 --start
+642 11 --foreground
+642 11 --components=secrets
+646 9 ao0296@pts/31
+648 10 ao0296
+648 10 [priv]
+649 9 ao0296@notty
+651 10 at0740
+651 10 [priv]
+652 9 --user
+655 14 --session
+655 14 --address=systemd:
+655 14 --nofork
+655 14 --nopidfile
+655 14 --systemd-activation
+655 14 --syslog-only
+657 12 /run/user/1633519974/gvfs
+657 12 -f
+657 12 -o
+657 12 big_writes
+659 9 at0740@pts/11
+663 11 --start
+663 11 --foreground
+663 11 --components=secrets
+669 10 jmh0834
+669 10 [priv]
+670 9 jmh0834@pts/14
+672 11 --start
+672 11 --foreground
+672 11 --components=secrets
+673 10 ajs0523
+673 10 [priv]
+674 9 ajs0523@notty
+677 10 jar0582
+677 10 [priv]
+678 9 jar0582@pts/1
+680 10 jmh0834
+680 10 [priv]
+681 9 jmh0834@notty
+684 9 p3.c
+685 9 --user
+688 14 --session
+688 14 --address=systemd:
+688 14 --nofork
+688 14 --nopidfile
+688 14 --systemd-activation
+688 14 --syslog-only
+690 12 /run/user/1633495089/gvfs
+690 12 -f
+690 12 -o
+690 12 big_writes
+695 11 --start
+695 11 --foreground
+695 11 --components=secrets
+700 10 zad0020
+700 10 [priv]
+701 9 zad0020@pts/26
+703 10 ygm0004
+703 10 [priv]
+704 9 --user
+705 9 server.c
+708 14 --session
+708 14 --address=systemd:
+708 14 --nofork
+708 14 --nopidfile
+708 14 --systemd-activation
+708 14 --syslog-only
+710 12 /run/user/1633660185/gvfs
+710 12 -f
+710 12 -o
+710 12 big_writes
+712 9 ygm0004@pts/23
+716 11 --start
+716 11 --foreground
+716 11 --components=secrets
+721 10 ict0011
+721 10 [priv]
+722 9 --user
+725 14 --session
+725 14 --address=systemd:
+725 14 --nofork
+725 14 --nopidfile
+725 14 --systemd-activation
+725 14 --syslog-only
+727 12 /run/user/1633492457/gvfs
+727 12 -f
+727 12 -o
+727 12 big_writes
+731 9 ict0011@notty
+733 11 --start
+733 11 --foreground
+733 11 --components=secrets
+738 10 pcs0079
+738 10 [priv]
+739 9 --user
+742 14 --session
+742 14 --address=systemd:
+742 14 --nofork
+742 14 --nopidfile
+742 14 --systemd-activation
+742 14 --syslog-only
+744 12 /run/user/1633570323/gvfs
+744 12 -f
+744 12 -o
+744 12 big_writes
+746 9 pcs0079@pts/12
+750 11 --start
+750 11 --foreground
+750 11 --components=secrets
+754 10 gm0394
+754 10 [priv]
+756 9 --user
+759 14 --session
+759 14 --address=systemd:
+759 14 --nofork
+759 14 --nopidfile
+759 14 --systemd-activation
+759 14 --syslog-only
+761 12 /run/user/1633547328/gvfs
+761 12 -f
+761 12 -o
+761 12 big_writes
+763 9 gm0394@pts/33
+767 11 --start
+767 11 --foreground
+767 11 --components=secrets
+774 10 jcw0356
+774 10 [priv]
+775 9 --user
+777 14 --session
+777 14 --address=systemd:
+777 14 --nofork
+777 14 --nopidfile
+777 14 --systemd-activation
+777 14 --syslog-only
+779 12 /run/user/1633596979/gvfs
+779 12 -f
+779 12 -o
+779 12 big_writes
+781 9 jcw0356@pts/24
+789 9 p3.c
+792 10 gos0018
+792 10 [priv]
+793 9 --user
+796 14 --session
+796 14 --address=systemd:
+796 14 --nofork
+796 14 --nopidfile
+796 14 --systemd-activation
+796 14 --syslog-only
+798 12 /run/user/1633498820/gvfs
+798 12 -f
+798 12 -o
+798 12 big_writes
+802 9 gos0018@pts/35
+804 11 --start
+804 11 --foreground
+804 11 --components=secrets
+809 10 bmv0045
+809 10 [priv]
+810 9 --user
+813 14 --session
+813 14 --address=systemd:
+813 14 --nofork
+813 14 --nopidfile
+813 14 --systemd-activation
+813 14 --syslog-only
+815 12 /run/user/1633626907/gvfs
+815 12 -f
+815 12 -o
+815 12 big_writes
+817 9 bmv0045@pts/38
+821 11 --start
+821 11 --foreground
+821 11 --components=secrets
+826 10 zad0020
+826 10 [priv]
+827 9 zad0020@notty
+829 10 pcs0079
+829 10 [priv]
+830 9 pcs0079@notty
+832 9 HW1_P4.c
+834 10 unt\\dmk0080
+834 10 [priv]
+835 9 UNT\\dmk0080@notty
+837 9 P4.c
+838 10 ict0011
+838 10 [priv]
+839 9 ict0011@pts/7
+841 10 njb0130
+841 10 [priv]
+842 9 --user
+845 14 --session
+845 14 --address=systemd:
+845 14 --nofork
+845 14 --nopidfile
+845 14 --systemd-activation
+845 14 --syslog-only
+847 12 /run/user/1633570238/gvfs
+847 12 -f
+847 12 -o
+847 12 big_writes
+849 9 njb0130@pts/19
+853 11 --start
+853 11 --foreground
+853 11 --components=secrets
+858 10 hak0065
+858 10 [priv]
+860 9 --user
+863 14 --session
+863 14 --address=systemd:
+863 14 --nofork
+863 14 --nopidfile
+863 14 --systemd-activation
+863 14 --syslog-only
+865 12 /run/user/1633184005/gvfs
+865 12 -f
+865 12 -o
+865 12 big_writes
+869 9 hak0065@pts/2
+871 11 --start
+871 11 --foreground
+871 11 --components=secrets
+877 10 cdh0374
+877 10 [priv]
+878 9 --user
+881 14 --session
+881 14 --address=systemd:
+881 14 --nofork
+881 14 --nopidfile
+881 14 --systemd-activation
+881 14 --syslog-only
+883 12 /run/user/1633521804/gvfs
+883 12 -f
+883 12 -o
+883 12 big_writes
+885 9 cdh0374@notty
+889 11 --start
+889 11 --foreground
+889 11 --components=secrets
+894 10 ona0015
+894 10 [priv]
+895 9 --user
+899 14 --session
+899 14 --address=systemd:
+899 14 --nofork
+899 14 --nopidfile
+899 14 --systemd-activation
+899 14 --syslog-only
+901 12 /run/user/1633657684/gvfs
+901 12 -f
+901 12 -o
+901 12 big_writes
+903 9 ona0015@notty
+907 11 --start
+907 11 --foreground
+907 11 --components=secrets
+913 10 njb0130
+913 10 [priv]
+914 10 ona0015
+914 10 [priv]
+915 10 rjc0184
+915 10 [priv]
+916 9 njb0130@notty
+918 9 ona0015@pts/16
+920 10 rjc0184
+920 10 [priv]
+921 9 --user
+923 14 --session
+923 14 --address=systemd:
+923 14 --nofork
+923 14 --nopidfile
+923 14 --systemd-activation
+923 14 --syslog-only
+925 12 /run/user/1633496170/gvfs
+925 12 -f
+925 12 -o
+925 12 big_writes
+927 9 rjc0184@notty
+935 9 rjc0184@pts/28
+939 10 mkv0036
+939 10 [priv]
+940 9 --user
+943 14 --session
+943 14 --address=systemd:
+943 14 --nofork
+943 14 --nopidfile
+943 14 --systemd-activation
+943 14 --syslog-only
+945 12 /run/user/1633524176/gvfs
+945 12 -f
+945 12 -o
+945 12 big_writes
+946 9 mkv0036@notty
+951 11 --start
+951 11 --foreground
+951 11 --components=secrets
+957 9 script.txt
+958 10 erb0149
+958 10 [priv]
+959 9 --user
+960 10 [options]
+960 10 script.txt
+961 9 -i
+964 14 --session
+964 14 --address=systemd:
+964 14 --nofork
+964 14 --nopidfile
+964 14 --systemd-activation
+964 14 --syslog-only
+966 12 /run/user/1633405161/gvfs
+966 12 -f
+966 12 -o
+966 12 big_writes
+968 9 erb0149@notty
+972 11 --start
+972 11 --foreground
+972 11 --components=secrets
+977 9 sedfile.txt
+978 9 temp1.cpp
+982 9 pa1B.c
+983 10 ndr0057
+983 10 [priv]
+986 9 --user
+989 14 --session
+989 14 --address=systemd:
+989 14 --nofork
+989 14 --nopidfile
+989 14 --systemd-activation
+989 14 --syslog-only
+991 12 /run/user/1633565429/gvfs
+991 12 -f
+991 12 -o
+991 12 big_writes
+996 9 ndr0057@notty
+997 11 --start
+997 11 --foreground
+997 11 --components=secrets
+1002 10 --daemonize=no
+1002 10 --log-target=journal
+1003 10 --daemonize=no
+1003 10 --log-target=journal
+1004 10 --daemonize=no
+1004 10 --log-target=journal
+1005 10 --daemonize=no
+1005 10 --log-target=journal
+1006 10 --daemonize=no
+1006 10 --log-target=journal
+1007 10 --daemonize=no
+1007 10 --log-target=journal
+1008 10 --daemonize=no
+1008 10 --log-target=journal
+1009 10 --daemonize=no
+1009 10 --log-target=journal
+1010 10 --daemonize=no
+1010 10 --log-target=journal
+1011 10 --daemonize=no
+1011 10 --log-target=journal
+1012 10 --daemonize=no
+1012 10 --log-target=journal
+1013 10 --daemonize=no
+1013 10 --log-target=journal
+1014 10 --daemonize=no
+1014 10 --log-target=journal
+1015 10 --daemonize=no
+1015 10 --log-target=journal
+1016 10 --daemonize=no
+1016 10 --log-target=journal
+1017 10 --daemonize=no
+1017 10 --log-target=journal
+1018 10 --daemonize=no
+1018 10 --log-target=journal
+1019 10 --daemonize=no
+1019 10 --log-target=journal
+1020 9 hw_1b.c
+1021 10 --daemonize=no
+1021 10 --log-target=journal
+1022 10 jar0582
+1022 10 [priv]
+1023 10 --daemonize=no
+1023 10 --log-target=journal
+1024 10 --daemonize=no
+1024 10 --log-target=journal
+1025 10 --daemonize=no
+1025 10 --log-target=journal
+1026 10 --daemonize=no
+1026 10 --log-target=journal
+1027 10 --daemonize=no
+1027 10 --log-target=journal
+1028 10 --daemonize=no
+1028 10 --log-target=journal
+1029 10 gos0018
+1029 10 [priv]
+1030 10 --daemonize=no
+1030 10 --log-target=journal
+1031 10 --daemonize=no
+1031 10 --log-target=journal
+1032 10 --daemonize=no
+1032 10 --log-target=journal
+1033 9 hw1_1.c
+1034 9 gos0018@notty
+1035 10 --daemonize=no
+1035 10 --log-target=journal
+1036 9 jar0582@pts/3
+1040 9 -ef
+]0;njb0130@cell01-cse: ~/SystProg/rec03njb0130@cell01-cse:~/SystProg/rec03$ gawk 'NF > 8 {for(i = 9; i <= NF; i++) print NR, NF, $i}' gawkfile.txt[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgawk 'NF > 8 {for(i = 9; i <= NF; i++) print NR, NF, $i}' gawkfile.txt[1P gawkfile.txt[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C g[1Pawkfile.txt[A]0;njb0130@cell01-cse: ~/SystProg/rec03njb0130@cell01-cse:~/SystProg/rec03$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C ga[1Pwkfile.txt[A]0;njb0130@cell01-cse: ~/SystProg/rec03njb0130@cell01-cse:~/SystProg/rec03$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C gaw[1Pkfile.txt[A]0;njb0130@cell01-cse: ~/SystProg/rec03njb0130@cell01-cse:~/SystProg/rec03$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgawk[1Pfile.txt[A]0;njb0130@cell01-cse: ~/SystProg/rec03njb0130@cell01-cse:~/SystProg/rec03$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C gawkf[1Pile.txt[A]0;njb0130@cell01-cse: ~/SystProg/rec03njb0130@cell01-cse:~/SystProg/rec03$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C gawkfi[1Ple.txt[A]0;njb0130@cell01-cse: ~/SystProg/rec03njb0130@cell01-cse:~/SystProg/rec03$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C gawkfil[1Pe.txt[A]0;njb0130@cell01-cse: ~/SystProg/rec03njb0130@cell01-cse:~/SystProg/rec03$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgawkfile[1P.txt[A]0;njb0130@cell01-cse: ~/SystProg/rec03njb0130@cell01-cse:~/SystProg/rec03$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C gawkfile.[1Ptxt[A]0;njb0130@cell01-cse: ~/SystProg/rec03njb0130@cell01-cse:~/SystProg/rec03$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C gawkfile.t[1Pxt[A]0;njb0130@cell01-cse: ~/SystProg/rec03njb0130@cell01-cse:~/SystProg/rec03$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C gawkfile.tx[1Pt[A]0;njb0130@cell01-cse: ~/SystProg/rec03njb0130@cell01-cse:~/SystProg/rec03$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgawkfile.txt[K[A]0;njb0130@cell01-cse: ~/SystProg/rec03njb0130@cell01-cse:~/SystProg/rec03$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C gawkfile.txt [K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P gawkfile.txt
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P gawkfile.txt[1P gawkfile.txt[1P gawkfile.txt[1Pgawkfile.txt[1P gawkfile.txt[1P gawkfile.txt[1P gawkfile.txt[1P gawkfile.txt[1Pgawkfile.txt[1P gawkfile.txt[1P gawkfile.txt[1P gawkfile.txt[1Pgawkfile.txt[1P gawkfile.txt[1P gawkfile.txt[1Pgawkfile.txt[1P gawkfile.txt[1Pgawkfile.txt[1P gawkfile.txt[1P gawkfile.txt[1Pgawkfile.txt[1P gawkfile.txt[1Pgawkfile.txt[1P gawkfile.txt[1P gawkfile.txt[1P gawkfile.txt[1P gawkfile.txt[1P gawkfile.txt[1P gawkfile.txt[1Pgawkfile.txt[1P gawkfile.txt[1Pgawkfile.txt[1P gawkfile.txt[1Pgawkfile.txt[1P gawkfile.txt[1P gawkfile.txtB gawkfile.txte gawkfile.txt[1P gawkfile.txtE gawkfile.txtG gawkfile.txtI gawkfile.txtN gawkfile.txt[C gawkfile.txt{ gawkfile.txtO gawkfile.txtF gawkfile.txtD gawkfile.txt[1P gawkfile.txtS gawkfile.txt[C gawkfile.txt= gawkfile.txt[C gawkfile.txt" gawkfile.txt\ gawkfile.txtt gawkfile.txt" gawkfile.txt} gawkfile.txt; gawkfile.txt[C gawkfile.txt{ gawkfile.txtp gawkfile.txtr gawkfile.txti gawkfile.txtn gawkfile.txtt gawkfile.txt[C gawkfile.txt$ gawkfile.txt1 gawkfile.txt, gawkfile.txt[C gawkfile.txt$ gawkfile.txt3 gawkfile.txt, gawkfile.txt[C gawkfile.txt$ gawkfile.txt2 gawkfile.txt [A]0;njb0130@cell01-cse: ~/SystProg/rec03njb0130@cell01-cse:~/SystProg/rec03$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C,  gawkfile.txt[A]0;njb0130@cell01-cse: ~/SystProg/rec03njb0130@cell01-cse:~/SystProg/rec03$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C$ gawkfile.txt[A]0;njb0130@cell01-cse: ~/SystProg/rec03njb0130@cell01-cse:~/SystProg/rec03$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C4 gawkfile.txt[A]0;njb0130@cell01-cse: ~/SystProg/rec03njb0130@cell01-cse:~/SystProg/rec03$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C, gawkfile.txt[A]0;njb0130@cell01-cse: ~/SystProg/rec03njb0130@cell01-cse:~/SystProg/rec03$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C gawkfile.txt[A]0;njb0130@cell01-cse: ~/SystProg/rec03njb0130@cell01-cse:~/SystProg/rec03$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C$ gawkfile.txt[A]0;njb0130@cell01-cse: ~/SystProg/rec03njb0130@cell01-cse:~/SystProg/rec03$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C5 gawkfile.txt[A]0;njb0130@cell01-cse: ~/SystProg/rec03njb0130@cell01-cse:~/SystProg/rec03$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C, gawkfile.txt[A]0;njb0130@cell01-cse: ~/SystProg/rec03njb0130@cell01-cse:~/SystProg/rec03$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C gawkfile.txt[A]0;njb0130@cell01-cse: ~/SystProg/rec03njb0130@cell01-cse:~/SystProg/rec03$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C$ gawkfile.txt[A]0;njb0130@cell01-cse: ~/SystProg/rec03njb0130@cell01-cse:~/SystProg/rec03$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C6 gawkfile.txt[A]0;njb0130@cell01-cse: ~/SystProg/rec03njb0130@cell01-cse:~/SystProg/rec03$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C, gawkfile.txt[C gawkfile.txt[C% gawkfile.txt[C[C[1P gawkfile.txt[C$ gawkfile.txt[C[C7 gawkfile.txt[C[C[C, gawkfile.txt[C[C[C[C[C gawkfile.txt[C[C[C[C[C$ gawkfile.txt[C[C[C[C[C[C8 gawkfile.txt[C[C[C[C[C[C[C} gawkfile.txt[C[C[C[C[C[C[C[C' gawkfile.txt[C[C[C[C[C[C[C[C[C[C gawkfile.txt[C[C[C[C[C[C[C[C[C[C
+UID	PPID	PID	C	STIME	TTY	TIME	CMD
+root	0	1	0	Aug28	?	01:13:49	/sbin/init
+root	0	2	0	Aug28	?	00:00:02	[kthreadd]
+root	2	3	0	Aug28	?	00:00:00	[rcu_gp]
+root	2	4	0	Aug28	?	00:00:00	[rcu_par_gp]
+root	2	5	0	Aug28	?	00:00:00	[netns]
+root	2	7	0	Aug28	?	00:00:00	[kworker/0:0H-events_highpri]
+root	2	10	0	Aug28	?	00:00:00	[mm_percpu_wq]
+root	2	11	0	Aug28	?	00:00:00	[rcu_tasks_rude_]
+root	2	12	0	Aug28	?	00:00:00	[rcu_tasks_trace]
+root	2	13	0	Aug28	?	00:02:29	[ksoftirqd/0]
+root	2	14	0	Aug28	?	00:11:39	[rcu_sched]
+root	2	15	0	Aug28	?	00:00:07	[migration/0]
+root	2	16	0	Aug28	?	00:00:00	[idle_inject/0]
+root	2	17	0	Aug28	?	00:00:00	[cpuhp/0]
+root	2	18	0	Aug28	?	00:00:00	[cpuhp/1]
+root	2	19	0	Aug28	?	00:00:00	[idle_inject/1]
+root	2	20	0	Aug28	?	00:00:07	[migration/1]
+root	2	21	0	Aug28	?	00:02:21	[ksoftirqd/1]
+root	2	23	0	Aug28	?	00:00:00	[kworker/1:0H-events_highpri]
+root	2	24	0	Aug28	?	00:00:00	[kdevtmpfs]
+root	2	25	0	Aug28	?	00:00:00	[inet_frag_wq]
+root	2	26	0	Aug28	?	00:00:00	[kauditd]
+root	2	28	0	Aug28	?	00:00:05	[khungtaskd]
+root	2	29	0	Aug28	?	00:00:00	[oom_reaper]
+root	2	30	0	Aug28	?	00:00:00	[writeback]
+root	2	31	0	Aug28	?	00:15:55	[kcompactd0]
+root	2	32	0	Aug28	?	00:00:00	[ksmd]
+root	2	33	0	Aug28	?	00:00:00	[khugepaged]
+root	2	80	0	Aug28	?	00:00:00	[kintegrityd]
+root	2	81	0	Aug28	?	00:00:00	[kblockd]
+root	2	82	0	Aug28	?	00:00:00	[blkcg_punt_bio]
+root	2	83	0	Aug28	?	00:00:00	[tpm_dev_wq]
+root	2	84	0	Aug28	?	00:00:00	[ata_sff]
+root	2	85	0	Aug28	?	00:00:00	[md]
+root	2	86	0	Aug28	?	00:00:00	[edac-poller]
+root	2	87	0	Aug28	?	00:00:00	[devfreq_wq]
+root	2	88	0	Aug28	?	00:00:00	[watchdogd]
+root	2	90	0	Aug28	?	00:00:57	[kworker/0:1H-kblockd]
+root	2	92	0	Aug28	?	00:11:17	[kswapd0]
+root	2	93	0	Aug28	?	00:00:00	[ecryptfs-kthrea]
+root	2	95	0	Aug28	?	00:00:00	[kthrotld]
+root	2	96	0	Aug28	?	00:00:00	[irq/24-pciehp]
+root	2	97	0	Aug28	?	00:00:00	[irq/25-pciehp]
+root	2	98	0	Aug28	?	00:00:00	[irq/26-pciehp]
+root	2	99	0	Aug28	?	00:00:00	[irq/27-pciehp]
+root	2	100	0	Aug28	?	00:00:00	[irq/28-pciehp]
+root	2	101	0	Aug28	?	00:00:00	[irq/29-pciehp]
+root	2	102	0	Aug28	?	00:00:00	[irq/30-pciehp]
+root	2	103	0	Aug28	?	00:00:00	[irq/31-pciehp]
+root	2	104	0	Aug28	?	00:00:00	[irq/32-pciehp]
+root	2	105	0	Aug28	?	00:00:00	[irq/33-pciehp]
+root	2	106	0	Aug28	?	00:00:00	[irq/34-pciehp]
+root	2	107	0	Aug28	?	00:00:00	[irq/35-pciehp]
+root	2	108	0	Aug28	?	00:00:00	[irq/36-pciehp]
+root	2	109	0	Aug28	?	00:00:00	[irq/37-pciehp]
+root	2	110	0	Aug28	?	00:00:00	[irq/38-pciehp]
+root	2	111	0	Aug28	?	00:00:00	[irq/39-pciehp]
+root	2	112	0	Aug28	?	00:00:00	[irq/40-pciehp]
+root	2	113	0	Aug28	?	00:00:00	[irq/41-pciehp]
+root	2	114	0	Aug28	?	00:00:00	[irq/42-pciehp]
+root	2	115	0	Aug28	?	00:00:00	[irq/43-pciehp]
+root	2	116	0	Aug28	?	00:00:00	[irq/44-pciehp]
+root	2	117	0	Aug28	?	00:00:00	[irq/45-pciehp]
+root	2	118	0	Aug28	?	00:00:00	[irq/46-pciehp]
+root	2	119	0	Aug28	?	00:00:00	[irq/47-pciehp]
+root	2	120	0	Aug28	?	00:00:00	[irq/48-pciehp]
+root	2	121	0	Aug28	?	00:00:00	[irq/49-pciehp]
+root	2	122	0	Aug28	?	00:00:00	[irq/50-pciehp]
+root	2	123	0	Aug28	?	00:00:00	[irq/51-pciehp]
+root	2	124	0	Aug28	?	00:00:00	[irq/52-pciehp]
+root	2	125	0	Aug28	?	00:00:00	[irq/53-pciehp]
+root	2	126	0	Aug28	?	00:00:00	[irq/54-pciehp]
+root	2	127	0	Aug28	?	00:00:00	[irq/55-pciehp]
+root	2	128	0	Aug28	?	00:00:00	[acpi_thermal_pm]
+root	2	130	0	Aug28	?	00:00:00	[scsi_eh_0]
+root	2	131	0	Aug28	?	00:00:00	[scsi_tmf_0]
+root	2	132	0	Aug28	?	00:00:00	[scsi_eh_1]
+root	2	133	0	Aug28	?	00:00:00	[scsi_tmf_1]
+root	2	135	0	Aug28	?	00:00:00	[vfio-irqfd-clea]
+root	2	136	0	Aug28	?	00:00:00	[mld]
+root	2	137	0	Aug28	?	00:00:00	[ipv6_addrconf]
+root	2	147	0	Aug28	?	00:00:00	[kstrp]
+root	2	150	0	Aug28	?	00:00:00	[zswap-shrink]
+root	2	157	0	Aug28	?	00:00:00	[charger_manager]
+root	2	179	0	Aug28	?	00:00:57	[kworker/1:1H-kblockd]
+root	2	202	0	Aug28	?	00:00:00	[mpt_poll_0]
+root	2	203	0	Aug28	?	00:00:00	[mpt/0]
+root	2	204	0	Aug28	?	00:00:00	[scsi_eh_2]
+root	2	205	0	Aug28	?	00:00:00	[scsi_tmf_2]
+root	2	206	0	Aug28	?	00:00:00	[scsi_eh_3]
+root	2	207	0	Aug28	?	00:00:00	[scsi_tmf_3]
+root	2	208	0	Aug28	?	00:00:00	[scsi_eh_4]
+root	2	209	0	Aug28	?	00:00:00	[scsi_tmf_4]
+root	2	210	0	Aug28	?	00:00:00	[scsi_eh_5]
+root	2	211	0	Aug28	?	00:00:00	[scsi_tmf_5]
+root	2	212	0	Aug28	?	00:00:00	[scsi_eh_6]
+root	2	213	0	Aug28	?	00:00:00	[scsi_tmf_6]
+root	2	214	0	Aug28	?	00:00:00	[scsi_eh_7]
+root	2	215	0	Aug28	?	00:00:00	[scsi_tmf_7]
+root	2	217	0	Aug28	?	00:00:00	[scsi_eh_8]
+root	2	218	0	Aug28	?	00:00:00	[scsi_tmf_8]
+root	2	219	0	Aug28	?	00:00:00	[scsi_eh_9]
+root	2	220	0	Aug28	?	00:00:00	[scsi_tmf_9]
+root	2	221	0	Aug28	?	00:00:00	[scsi_eh_10]
+root	2	222	0	Aug28	?	00:00:00	[scsi_tmf_10]
+root	2	223	0	Aug28	?	00:00:00	[scsi_eh_11]
+root	2	224	0	Aug28	?	00:00:00	[scsi_tmf_11]
+root	2	225	0	Aug28	?	00:00:00	[scsi_eh_12]
+root	2	226	0	Aug28	?	00:00:00	[scsi_tmf_12]
+root	2	227	0	Aug28	?	00:00:00	[scsi_eh_13]
+root	2	228	0	Aug28	?	00:00:00	[scsi_tmf_13]
+root	2	229	0	Aug28	?	00:00:00	[scsi_eh_14]
+root	2	230	0	Aug28	?	00:00:00	[scsi_tmf_14]
+root	2	231	0	Aug28	?	00:00:00	[scsi_eh_15]
+root	2	232	0	Aug28	?	00:00:00	[scsi_tmf_15]
+root	2	233	0	Aug28	?	00:00:00	[scsi_eh_16]
+root	2	234	0	Aug28	?	00:00:00	[scsi_tmf_16]
+root	2	235	0	Aug28	?	00:00:00	[scsi_eh_17]
+root	2	236	0	Aug28	?	00:00:00	[scsi_tmf_17]
+root	2	237	0	Aug28	?	00:00:00	[scsi_eh_18]
+root	2	238	0	Aug28	?	00:00:00	[scsi_tmf_18]
+root	2	239	0	Aug28	?	00:00:00	[scsi_eh_19]
+root	2	240	0	Aug28	?	00:00:00	[scsi_tmf_19]
+root	2	241	0	Aug28	?	00:00:00	[scsi_eh_20]
+root	2	242	0	Aug28	?	00:00:00	[scsi_tmf_20]
+root	2	243	0	Aug28	?	00:00:00	[scsi_eh_21]
+root	2	244	0	Aug28	?	00:00:00	[scsi_tmf_21]
+root	2	245	0	Aug28	?	00:00:00	[scsi_eh_22]
+root	2	246	0	Aug28	?	00:00:00	[scsi_tmf_22]
+root	2	247	0	Aug28	?	00:00:00	[scsi_eh_23]
+root	2	248	0	Aug28	?	00:00:00	[scsi_tmf_23]
+root	2	249	0	Aug28	?	00:00:00	[scsi_eh_24]
+root	2	250	0	Aug28	?	00:00:00	[scsi_tmf_24]
+root	2	251	0	Aug28	?	00:00:00	[scsi_eh_25]
+root	2	252	0	Aug28	?	00:00:00	[scsi_tmf_25]
+root	2	253	0	Aug28	?	00:00:00	[scsi_eh_26]
+root	2	254	0	Aug28	?	00:00:00	[scsi_tmf_26]
+root	2	255	0	Aug28	?	00:00:00	[scsi_eh_27]
+root	2	256	0	Aug28	?	00:00:00	[scsi_tmf_27]
+root	2	257	0	Aug28	?	00:00:00	[scsi_eh_28]
+root	2	258	0	Aug28	?	00:00:00	[scsi_tmf_28]
+root	2	259	0	Aug28	?	00:00:00	[scsi_eh_29]
+root	2	260	0	Aug28	?	00:00:00	[scsi_tmf_29]
+root	2	261	0	Aug28	?	00:00:00	[scsi_eh_30]
+root	2	262	0	Aug28	?	00:00:00	[scsi_tmf_30]
+root	2	263	0	Aug28	?	00:00:00	[scsi_eh_31]
+root	2	264	0	Aug28	?	00:00:00	[scsi_tmf_31]
+root	2	292	0	Aug28	?	00:00:00	[scsi_eh_32]
+root	2	293	0	Aug28	?	00:00:00	[scsi_tmf_32]
+root	2	315	0	Aug28	?	00:01:21	[jbd2/sda5-8]
+root	2	316	0	Aug28	?	00:00:00	[ext4-rsv-conver]
+root	1	358	1	Aug28	?	06:16:14	/lib/systemd/systemd-journald
+root	2	379	0	Aug28	?	00:00:00	[rpciod]
+root	2	380	0	Aug28	?	00:00:00	[xprtiod]
+root	2	382	0	Aug28	?	00:00:00	[ipmi-msghandler]
+root	1	388	0	Aug28	?	00:00:10	/lib/systemd/systemd-udevd
+root	2	422	0	Aug28	?	00:00:00	[ttm_swap]
+root	2	423	0	Aug28	?	00:00:00	[irq/16-vmwgfx]
+root	2	424	0	Aug28	?	00:00:00	[card0-crtc0]
+root	2	425	0	Aug28	?	00:00:00	[card0-crtc1]
+root	2	426	0	Aug28	?	00:00:00	[card0-crtc2]
+root	2	427	0	Aug28	?	00:00:00	[card0-crtc3]
+root	2	428	0	Aug28	?	00:00:00	[card0-crtc4]
+root	2	429	0	Aug28	?	00:00:00	[card0-crtc5]
+root	2	430	0	Aug28	?	00:00:00	[card0-crtc6]
+root	2	431	0	Aug28	?	00:00:00	[card0-crtc7]
+root	2	446	0	Aug28	?	00:00:00	[cryptd]
+root	1	498	0	Aug28	?	00:00:00	/usr/sbin/rpc.gssd
+_rpc	1	500	0	Aug28	?	00:00:02	/sbin/rpcbind
+systemd+	1	502	0	Aug28	?	00:00:17	/lib/systemd/systemd-resolved
+root	2	503	0	Aug28	?	00:00:00	[nfit]
+systemd+	1	504	0	Aug28	?	00:00:02	/lib/systemd/systemd-timesyncd
+root	1	539	0	Aug28	?	00:13:07	/usr/lib/accountsservice/accounts-daemon
+root	1	540	0	Aug28	?	00:00:00	/usr/sbin/acpid
+avahi	1	545	0	Aug28	?	00:05:45	avahi-daemon:
+root	1	550	0	Aug28	?	00:00:03	/usr/sbin/cron
+message+	1	555	0	Aug28	?	00:34:21	/usr/bin/dbus-daemon
+root	1	561	0	Aug28	?	00:12:15	/usr/sbin/NetworkManager
+root	1	576	0	Aug28	?	00:01:18	/usr/sbin/irqbalance
+root	1	579	0	Aug28	?	00:00:00	/usr/bin/python3
+root	1	581	8	Aug28	?	2-01:43:13	/usr/lib/policykit-1/polkitd
+syslog	1	585	0	Aug28	?	00:55:22	/usr/sbin/rsyslogd
+root	1	587	0	Aug28	?	00:00:00	/usr/libexec/switcheroo-control
+root	1	591	0	Aug28	?	00:01:06	/lib/systemd/systemd-logind
+root	1	593	0	Aug28	?	00:00:28	/usr/lib/udisks2/udisksd
+root	1	594	0	Aug28	?	00:00:07	/sbin/wpa_supplicant
+avahi	545	598	0	Aug28	?	00:00:00	avahi-daemon:
+root	1	630	0	Aug28	?	00:00:10	/usr/sbin/ModemManager
+root	1	655	0	Aug28	?	00:00:00	/opt/pbis/sbin/lwsmd
+root	655	670	0	Aug28	?	00:13:41	lw-container
+root	1	691	0	Aug28	?	00:00:00	/usr/bin/python3
+root	1	695	0	Aug28	?	00:00:02	/usr/sbin/gdm3
+root	695	709	0	Aug28	?	00:00:04	gdm-session-worker
+root	655	717	0	Aug28	?	00:00:01	lw-container
+whoopsie	1	739	0	Aug28	?	00:00:08	/usr/bin/whoopsie
+root	655	746	0	Aug28	?	00:00:33	lw-container
+gdm	1	778	0	Aug28	?	00:00:29	/lib/systemd/systemd
+gdm	778	779	0	Aug28	?	00:00:00	(sd-pam)
+root	2	780	0	Aug28	?	00:00:00	[nfsiod]
+root	655	784	0	Aug28	?	00:00:00	lw-container
+gdm	778	803	0	Aug28	?	00:00:03	/usr/bin/pulseaudio
+gdm	778	805	0	Aug28	?	00:00:00	/usr/libexec/tracker-miner-fs
+gdm	709	807	0	Aug28	tty1	00:00:00	/usr/lib/gdm3/gdm-wayland-session
+gdm	778	809	0	Aug28	?	00:00:00	/usr/bin/dbus-daemon
+root	655	811	21	Aug28	?	5-10:51:14	lw-container
+root	2	813	0	Aug28	?	00:00:00	[NFSv4
+gdm	807	835	0	Aug28	tty1	00:00:00	dbus-run-session
+gdm	835	836	0	Aug28	tty1	00:00:00	dbus-daemon
+gdm	778	839	0	Aug28	?	00:00:00	/usr/libexec/gvfsd
+rtkit	1	840	0	Aug28	?	00:03:09	/usr/libexec/rtkit-daemon
+gdm	835	841	0	Aug28	tty1	00:00:08	/usr/libexec/gnome-session-binary
+gdm	778	858	0	Aug28	?	00:00:00	/usr/libexec/gvfsd-fuse
+gdm	778	860	0	Aug28	?	00:01:57	/usr/libexec/gvfs-udisks2-volume-monitor
+gdm	778	873	0	Aug28	?	00:00:00	/usr/libexec/gvfs-goa-volume-monitor
+gdm	778	881	0	Aug28	?	00:00:06	/usr/libexec/goa-daemon
+root	655	912	0	Aug28	?	00:00:00	lw-container
+gdm	841	928	0	Aug28	tty1	00:35:03	/usr/bin/gnome-shell
+gdm	778	951	0	Aug28	?	00:00:12	/usr/libexec/goa-identity-service
+kernoops	1	952	0	Aug28	?	00:02:38	/usr/sbin/kerneloops
+kernoops	1	959	0	Aug28	?	00:02:39	/usr/sbin/kerneloops
+gdm	778	961	0	Aug28	?	00:00:00	/usr/libexec/gvfs-gphoto2-volume-monitor
+root	1	966	0	Aug28	?	00:00:08	sshd:
+gdm	778	969	0	Aug28	?	00:00:00	/usr/libexec/gvfs-mtp-volume-monitor
+gdm	778	974	0	Aug28	?	00:00:29	/usr/libexec/gvfs-afc-volume-monitor
+root	1	982	0	Aug28	?	00:00:08	/usr/lib/upower/upowerd
+gdm	1	1018	0	Aug28	tty1	00:00:00	/usr/libexec/at-spi-bus-launcher
+gdm	1018	1023	0	Aug28	tty1	00:00:00	/usr/bin/dbus-daemon
+gdm	928	1026	0	Aug28	tty1	00:00:00	/usr/bin/Xwayland
+gdm	1	1043	0	Aug28	tty1	00:00:00	/usr/libexec/xdg-permission-store
+gdm	1	1057	0	Aug28	tty1	00:00:00	/usr/bin/gjs
+gdm	1	1058	0	Aug28	tty1	00:00:00	/usr/libexec/at-spi2-registryd
+gdm	841	1059	0	Aug28	tty1	00:00:16	/usr/libexec/gsd-sharing
+gdm	841	1062	0	Aug28	tty1	00:00:00	/usr/libexec/gsd-wacom
+gdm	841	1065	0	Aug28	tty1	00:00:08	/usr/libexec/gsd-color
+gdm	841	1074	0	Aug28	tty1	00:00:04	/usr/libexec/gsd-keyboard
+gdm	841	1075	0	Aug28	tty1	00:00:00	/usr/libexec/gsd-print-notifications
+gdm	841	1077	0	Aug28	tty1	00:00:06	/usr/libexec/gsd-rfkill
+gdm	841	1078	0	Aug28	tty1	00:00:00	/usr/libexec/gsd-smartcard
+gdm	841	1079	0	Aug28	tty1	00:00:00	/usr/libexec/gsd-datetime
+gdm	841	1086	0	Aug28	tty1	00:00:05	/usr/libexec/gsd-media-keys
+gdm	841	1089	0	Aug28	tty1	00:00:00	/usr/libexec/gsd-screensaver-proxy
+gdm	841	1092	0	Aug28	tty1	00:00:00	/usr/libexec/gsd-sound
+gdm	841	1097	0	Aug28	tty1	00:00:00	/usr/libexec/gsd-a11y-settings
+gdm	841	1100	0	Aug28	tty1	00:02:08	/usr/libexec/gsd-housekeeping
+gdm	841	1106	0	Aug28	tty1	00:00:05	/usr/libexec/gsd-power
+gdm	1	1134	0	Aug28	tty1	00:00:00	/usr/libexec/gsd-printer
+gdm	928	1172	0	Aug28	tty1	00:00:00	ibus-daemon
+gdm	1172	1177	0	Aug28	tty1	00:00:00	/usr/libexec/ibus-memconf
+gdm	1	1180	0	Aug28	tty1	00:00:00	/usr/libexec/ibus-x11
+gdm	1	1184	0	Aug28	tty1	00:00:00	/usr/libexec/ibus-portal
+gdm	1172	1191	0	Aug28	tty1	00:00:00	/usr/libexec/ibus-engine-simple
+colord	1	1197	0	Aug28	?	00:00:00	/usr/libexec/colord
+gdm	778	11702	0	Aug29	?	00:00:00	/usr/libexec/gvfsd-metadata
+root	966	1364141	0	Sep12	?	00:00:01	sshd:
+cengadm+	1	1364247	0	Sep12	?	00:00:17	/lib/systemd/systemd
+cengadm+	1364247	1364248	0	Sep12	?	00:00:00	(sd-pam)
+cengadm+	1364247	1364255	0	Sep12	?	00:00:00	/usr/libexec/tracker-miner-fs
+cengadm+	1364247	1364266	0	Sep12	?	00:00:00	/usr/bin/dbus-daemon
+cengadm+	1364247	1364278	0	Sep12	?	00:00:00	/usr/libexec/gvfsd
+cengadm+	1364247	1364298	0	Sep12	?	00:00:00	/usr/libexec/gvfsd-fuse
+cengadm+	1364247	1364304	0	Sep12	?	00:01:00	/usr/libexec/gvfs-udisks2-volume-monitor
+cengadm+	1364247	1364321	0	Sep12	?	00:00:00	/usr/libexec/gvfs-goa-volume-monitor
+cengadm+	1364247	1364326	0	Sep12	?	00:00:02	/usr/libexec/goa-daemon
+cengadm+	1364247	1364338	0	Sep12	?	00:00:06	/usr/libexec/goa-identity-service
+cengadm+	1364247	1364341	0	Sep12	?	00:00:00	/usr/libexec/gvfs-gphoto2-volume-monitor
+cengadm+	1364247	1364357	0	Sep12	?	00:00:00	/usr/libexec/gvfs-mtp-volume-monitor
+cengadm+	1364141	1364368	0	Sep12	?	00:00:02	sshd:
+cengadm+	1364247	1364370	0	Sep12	?	00:00:11	/usr/libexec/gvfs-afc-volume-monitor
+root	966	1364379	0	Sep12	?	00:00:00	sshd:
+cengadm+	1364368	1364388	0	Sep12	pts/47	00:00:00	-bash
+cengadm+	1364379	1364457	0	Sep12	?	00:00:00	sshd:
+cengadm+	1364457	1364458	0	Sep12	?	00:00:00	/usr/lib/openssh/sftp-server
+cengadm+	1364247	1500131	0	Sep13	?	00:00:01	/usr/bin/pulseaudio
+cengadm+	1364247	1763480	0	Sep14	?	00:00:00	/usr/libexec/gvfsd-metadata
+gm0505	1	1990789	0	Sep16	?	00:00:09	/lib/systemd/systemd
+gm0505	1990789	1990791	0	Sep16	?	00:00:00	(sd-pam)
+gm0505	1990789	1990796	0	Sep16	?	00:00:01	/usr/bin/pulseaudio
+gm0505	1990789	1990798	0	Sep16	?	00:00:00	/usr/libexec/tracker-miner-fs
+gm0505	1990789	1990801	0	Sep16	?	00:00:00	/usr/bin/dbus-daemon
+gm0505	1990789	1990821	0	Sep16	?	00:00:00	/usr/libexec/gvfsd
+gm0505	1990789	1990840	0	Sep16	?	00:00:00	/usr/libexec/gvfsd-fuse
+gm0505	1990789	1990848	0	Sep16	?	00:00:34	/usr/libexec/gvfs-udisks2-volume-monitor
+gm0505	1990789	1990868	0	Sep16	?	00:00:00	/usr/libexec/gvfs-goa-volume-monitor
+gm0505	1990789	1990873	0	Sep16	?	00:00:22	/usr/libexec/goa-daemon
+gm0505	1990789	1990899	0	Sep16	?	00:00:04	/usr/libexec/goa-identity-service
+gm0505	1990789	1990904	0	Sep16	?	00:00:00	/usr/bin/gnome-keyring-daemon
+gm0505	1990789	1990909	0	Sep16	?	00:00:00	/usr/libexec/gvfs-gphoto2-volume-monitor
+gm0505	1990789	1990914	0	Sep16	?	00:00:00	/usr/libexec/gvfs-mtp-volume-monitor
+gm0505	1990789	1990918	0	Sep16	?	00:00:06	/usr/libexec/gvfs-afc-volume-monitor
+root	966	1995360	0	Sep16	?	00:00:00	sshd:
+gm0505	1995360	1995427	0	Sep16	?	00:00:01	sshd:
+gm0505	1995427	1995429	0	Sep16	pts/27	00:00:00	-bash
+gm0505	1990789	1995611	0	Sep16	?	00:00:00	/usr/libexec/gvfsd-metadata
+root	966	2020178	0	Sep16	?	00:00:00	sshd:
+sd0717	1	2020194	0	Sep16	?	00:00:09	/lib/systemd/systemd
+sd0717	2020194	2020195	0	Sep16	?	00:00:00	(sd-pam)
+sd0717	2020194	2020200	0	Sep16	?	00:00:00	/usr/bin/pulseaudio
+sd0717	2020194	2020206	0	Sep16	?	00:00:00	/usr/bin/dbus-daemon
+sd0717	2020194	2020239	0	Sep16	?	00:00:00	/usr/libexec/gvfsd
+sd0717	2020194	2020244	0	Sep16	?	00:00:00	/usr/libexec/gvfsd-fuse
+sd0717	2020194	2020260	0	Sep16	?	00:00:33	/usr/libexec/gvfs-udisks2-volume-monitor
+sd0717	2020194	2020269	0	Sep16	?	00:00:00	/usr/libexec/gvfs-goa-volume-monitor
+sd0717	2020194	2020273	0	Sep16	?	00:00:23	/usr/libexec/goa-daemon
+sd0717	2020194	2020288	0	Sep16	?	00:00:04	/usr/libexec/goa-identity-service
+sd0717	2020194	2020298	0	Sep16	?	00:00:00	/usr/libexec/gvfs-gphoto2-volume-monitor
+sd0717	2020194	2020308	0	Sep16	?	00:00:00	/usr/libexec/gvfs-mtp-volume-monitor
+sd0717	2020178	2020314	0	Sep16	?	00:00:01	sshd:
+sd0717	2020194	2020316	0	Sep16	?	00:00:06	/usr/libexec/gvfs-afc-volume-monitor
+sd0717	2020314	2020334	0	Sep16	pts/6	00:00:00	-bash
+sd0717	2020194	2020378	0	Sep16	?	00:00:00	/usr/libexec/tracker-miner-fs
+sd0717	2020194	2020471	0	Sep16	?	00:00:00	/usr/libexec/gvfsd-metadata
+root	966	2057568	0	Sep16	?	00:00:00	sshd:
+sr1074	1	2057579	0	Sep16	?	00:00:13	/lib/systemd/systemd
+sr1074	2057579	2057580	0	Sep16	?	00:00:00	(sd-pam)
+sr1074	2057579	2057589	0	Sep16	?	00:00:00	/usr/bin/dbus-daemon
+sr1074	2057579	2057624	0	Sep16	?	00:00:00	/usr/libexec/gvfsd
+sr1074	2057579	2057629	0	Sep16	?	00:00:00	/usr/libexec/gvfsd-fuse
+sr1074	2057579	2057630	0	Sep16	?	00:00:32	/usr/libexec/gvfs-udisks2-volume-monitor
+sr1074	2057579	2057661	0	Sep16	?	00:00:00	/usr/libexec/gvfs-goa-volume-monitor
+sr1074	2057579	2057666	0	Sep16	?	00:00:21	/usr/libexec/goa-daemon
+sr1074	2057568	2057680	0	Sep16	?	00:00:01	sshd:
+sr1074	2057579	2057687	0	Sep16	?	00:00:04	/usr/libexec/goa-identity-service
+sr1074	2057579	2057693	0	Sep16	?	00:00:00	/usr/libexec/gvfs-gphoto2-volume-monitor
+sr1074	2057579	2057697	0	Sep16	?	00:00:00	/usr/libexec/gvfs-mtp-volume-monitor
+sr1074	2057579	2057701	0	Sep16	?	00:00:06	/usr/libexec/gvfs-afc-volume-monitor
+sr1074	2057680	2057721	0	Sep16	pts/0	00:00:00	-bash
+sr1074	2057579	2057771	0	Sep16	?	00:00:00	/usr/libexec/tracker-miner-fs
+sr1074	2057579	2057841	0	Sep16	?	00:00:00	/usr/libexec/gvfsd-metadata
+sr1074	2057579	2120313	0	Sep17	?	00:00:00	/usr/bin/pulseaudio
+root	966	2197246	0	Sep19	?	00:00:00	sshd:
+UNT\brb+	1	2197262	0	Sep19	?	00:00:13	/lib/systemd/systemd
+UNT\brb+	2197262	2197264	0	Sep19	?	00:00:00	(sd-pam)
+UNT\brb+	2197262	2197272	0	Sep19	?	00:00:00	/usr/libexec/tracker-miner-fs
+UNT\brb+	2197262	2197280	0	Sep19	?	00:00:00	/usr/bin/dbus-daemon
+UNT\brb+	2197262	2197309	0	Sep19	?	00:00:00	/usr/libexec/gvfsd
+UNT\brb+	2197262	2197315	0	Sep19	?	00:00:00	/usr/libexec/gvfsd-fuse
+UNT\brb+	2197262	2197321	0	Sep19	?	00:00:29	/usr/libexec/gvfs-udisks2-volume-monitor
+UNT\brb+	2197262	2197350	0	Sep19	?	00:00:00	/usr/libexec/gvfs-goa-volume-monitor
+UNT\brb+	2197262	2197355	0	Sep19	?	00:00:11	/usr/libexec/goa-daemon
+UNT\brb+	2197246	2197365	0	Sep19	?	00:00:01	sshd:
+UNT\brb+	2197262	2197372	0	Sep19	?	00:00:03	/usr/libexec/goa-identity-service
+UNT\brb+	2197262	2197376	0	Sep19	?	00:00:00	/usr/bin/gnome-keyring-daemon
+UNT\brb+	2197262	2197383	0	Sep19	?	00:00:00	/usr/libexec/gvfs-gphoto2-volume-monitor
+UNT\brb+	2197262	2197387	0	Sep19	?	00:00:00	/usr/libexec/gvfs-mtp-volume-monitor
+UNT\brb+	2197262	2197391	0	Sep19	?	00:00:03	/usr/libexec/gvfs-afc-volume-monitor
+UNT\brb+	2197365	2197411	0	Sep19	pts/5	00:00:00	-bash
+root	966	2279847	0	Sep19	?	00:00:00	sshd:
+UNT\bj0+	1	2279851	0	Sep19	?	00:00:10	/lib/systemd/systemd
+UNT\bj0+	2279851	2279854	0	Sep19	?	00:00:00	(sd-pam)
+UNT\bj0+	2279851	2279861	0	Sep19	?	00:00:00	/usr/libexec/tracker-miner-fs
+UNT\bj0+	2279851	2279867	0	Sep19	?	00:00:00	/usr/bin/dbus-daemon
+UNT\bj0+	2279851	2279898	0	Sep19	?	00:00:00	/usr/libexec/gvfsd
+UNT\bj0+	2279851	2279904	0	Sep19	?	00:00:00	/usr/libexec/gvfsd-fuse
+UNT\bj0+	2279851	2279907	0	Sep19	?	00:00:26	/usr/libexec/gvfs-udisks2-volume-monitor
+UNT\bj0+	2279847	2279942	0	Sep19	?	00:00:00	sshd:
+UNT\bj0+	2279851	2279949	0	Sep19	?	00:00:00	/usr/libexec/gvfs-goa-volume-monitor
+UNT\bj0+	2279851	2279953	0	Sep19	?	00:00:10	/usr/libexec/goa-daemon
+UNT\bj0+	2279851	2279962	0	Sep19	?	00:00:03	/usr/libexec/goa-identity-service
+UNT\bj0+	2279851	2279967	0	Sep19	?	00:00:00	/usr/bin/gnome-keyring-daemon
+UNT\bj0+	2279851	2279973	0	Sep19	?	00:00:00	/usr/libexec/gvfs-gphoto2-volume-monitor
+UNT\bj0+	2279851	2279978	0	Sep19	?	00:00:00	/usr/libexec/gvfs-mtp-volume-monitor
+UNT\bj0+	2279851	2279982	0	Sep19	?	00:00:03	/usr/libexec/gvfs-afc-volume-monitor
+UNT\bj0+	2279942	2279998	0	Sep19	pts/13	00:00:00	-bash
+UNT\brb+	2197411	2290444	0	Sep19	pts/5	00:00:00	sftp
+UNT\brb+	2290444	2290445	0	Sep19	pts/5	00:00:00	/usr/bin/ssh
+UNT\brb+	2197262	2371119	0	Sep20	?	00:00:00	/usr/bin/pulseaudio
+UNT\bj0+	2279851	2371144	0	Sep20	?	00:00:00	/usr/bin/pulseaudio
+UNT\bj0+	2279851	2402887	0	Sep20	?	00:00:00	/usr/libexec/gvfsd-metadata
+UNT\brb+	2197262	2403075	0	Sep20	?	00:00:00	/usr/libexec/gvfsd-metadata
+bnm0162	1	2419086	0	Sep20	?	00:00:10	/lib/systemd/systemd
+bnm0162	2419086	2419250	0	Sep20	?	00:00:00	(sd-pam)
+bnm0162	2419086	2419257	0	Sep20	?	00:00:00	/usr/libexec/tracker-miner-fs
+bnm0162	2419086	2419273	0	Sep20	?	00:00:00	/usr/bin/dbus-daemon
+bnm0162	2419086	2419328	0	Sep20	?	00:00:00	/usr/libexec/gvfsd
+bnm0162	2419086	2419333	0	Sep20	?	00:00:00	/usr/libexec/gvfsd-fuse
+bnm0162	2419086	2419335	0	Sep20	?	00:00:22	/usr/libexec/gvfs-udisks2-volume-monitor
+bnm0162	2419086	2419346	0	Sep20	?	00:00:00	/usr/libexec/gvfs-goa-volume-monitor
+bnm0162	2419086	2419351	0	Sep20	?	00:00:07	/usr/libexec/goa-daemon
+bnm0162	2419086	2419359	0	Sep20	?	00:00:02	/usr/libexec/goa-identity-service
+bnm0162	2419086	2419361	0	Sep20	?	00:00:00	/usr/bin/gnome-keyring-daemon
+bnm0162	2419086	2419370	0	Sep20	?	00:00:00	/usr/libexec/gvfs-gphoto2-volume-monitor
+bnm0162	2419086	2419374	0	Sep20	?	00:00:00	/usr/libexec/gvfs-mtp-volume-monitor
+bnm0162	2419086	2419378	0	Sep20	?	00:00:02	/usr/libexec/gvfs-afc-volume-monitor
+bnm0162	2419086	2419400	0	Sep20	?	00:00:00	/usr/libexec/gvfsd-metadata
+root	966	2437110	0	Sep20	?	00:00:00	sshd:
+bnm0162	2437110	2437170	0	Sep20	?	00:00:00	sshd:
+bnm0162	2437170	2437174	0	Sep20	?	00:00:00	/usr/lib/openssh/sftp-server
+root	966	2445001	0	Sep20	?	00:00:00	sshd:
+UNT\dmk+	1	2445012	0	Sep20	?	00:00:09	/lib/systemd/systemd
+UNT\dmk+	2445012	2445018	0	Sep20	?	00:00:00	(sd-pam)
+UNT\dmk+	2445012	2445026	0	Sep20	?	00:00:00	/usr/libexec/tracker-miner-fs
+UNT\dmk+	2445012	2445047	0	Sep20	?	00:00:00	/usr/bin/dbus-daemon
+UNT\dmk+	2445012	2445073	0	Sep20	?	00:00:00	/usr/libexec/gvfsd
+UNT\dmk+	2445012	2445078	0	Sep20	?	00:00:00	/usr/libexec/gvfsd-fuse
+UNT\dmk+	2445012	2445082	0	Sep20	?	00:00:20	/usr/libexec/gvfs-udisks2-volume-monitor
+UNT\dmk+	2445001	2445112	0	Sep20	?	00:00:00	sshd:
+UNT\dmk+	2445012	2445114	0	Sep20	?	00:00:00	/usr/libexec/gvfs-goa-volume-monitor
+UNT\dmk+	2445012	2445118	0	Sep20	?	00:00:08	/usr/libexec/goa-daemon
+UNT\dmk+	2445012	2445125	0	Sep20	?	00:00:02	/usr/libexec/goa-identity-service
+UNT\dmk+	2445012	2445129	0	Sep20	?	00:00:00	/usr/bin/gnome-keyring-daemon
+UNT\dmk+	2445012	2445135	0	Sep20	?	00:00:00	/usr/libexec/gvfs-gphoto2-volume-monitor
+UNT\dmk+	2445012	2445140	0	Sep20	?	00:00:00	/usr/libexec/gvfs-mtp-volume-monitor
+UNT\dmk+	2445012	2445144	0	Sep20	?	00:00:02	/usr/libexec/gvfs-afc-volume-monitor
+UNT\dmk+	2445112	2445161	0	Sep20	?	00:00:00	/usr/lib/openssh/sftp-server
+UNT\dmk+	2445012	2445164	0	Sep20	?	00:00:00	/usr/libexec/gvfsd-metadata
+UNT\dmk+	2445012	2581006	0	Sep21	?	00:00:00	/usr/bin/pulseaudio
+bnm0162	2419086	2581008	0	Sep21	?	00:00:00	/usr/bin/pulseaudio
+root	2	2590155	0	Sep21	?	00:00:00	[xfsalloc]
+root	2	2590156	0	Sep21	?	00:00:00	[xfs_mru_cache]
+root	2	2590159	0	Sep21	?	00:00:00	[jfsIO]
+root	2	2590160	0	Sep21	?	00:00:00	[jfsCommit]
+root	2	2590161	0	Sep21	?	00:00:00	[jfsCommit]
+root	2	2590162	0	Sep21	?	00:00:00	[jfsSync]
+aaa1058	1	2608645	0	Sep21	?	00:00:08	/lib/systemd/systemd
+aaa1058	2608645	2608648	0	Sep21	?	00:00:00	(sd-pam)
+aaa1058	2608645	2608663	0	Sep21	?	00:00:00	/usr/libexec/tracker-miner-fs
+aaa1058	2608645	2608676	0	Sep21	?	00:00:00	/usr/bin/dbus-daemon
+aaa1058	2608645	2608725	0	Sep21	?	00:00:00	/usr/libexec/gvfsd
+aaa1058	2608645	2608730	0	Sep21	?	00:00:00	/usr/libexec/gvfsd-fuse
+aaa1058	2608645	2608732	0	Sep21	?	00:00:15	/usr/libexec/gvfs-udisks2-volume-monitor
+aaa1058	2608645	2608748	0	Sep21	?	00:00:00	/usr/libexec/gvfs-goa-volume-monitor
+aaa1058	2608645	2608752	0	Sep21	?	00:00:04	/usr/libexec/goa-daemon
+aaa1058	2608645	2608759	0	Sep21	?	00:00:01	/usr/libexec/goa-identity-service
+aaa1058	2608645	2608764	0	Sep21	?	00:00:00	/usr/bin/gnome-keyring-daemon
+aaa1058	2608645	2608770	0	Sep21	?	00:00:00	/usr/libexec/gvfs-gphoto2-volume-monitor
+aaa1058	2608645	2608774	0	Sep21	?	00:00:00	/usr/libexec/gvfs-mtp-volume-monitor
+aaa1058	2608645	2608778	0	Sep21	?	00:00:01	/usr/libexec/gvfs-afc-volume-monitor
+root	966	2608901	0	Sep21	?	00:00:00	sshd:
+aaa1058	2608901	2609023	0	Sep21	?	00:00:00	sshd:
+aaa1058	2609023	2609024	0	Sep21	?	00:00:00	/usr/lib/openssh/sftp-server
+root	966	2618099	0	Sep21	?	00:00:00	sshd:
+aaa1058	2618099	2618163	0	Sep21	?	00:00:00	sshd:
+aaa1058	2618163	2618166	0	Sep21	?	00:00:00	/usr/lib/openssh/sftp-server
+aaa1058	2608645	2618310	0	Sep21	?	00:00:00	/usr/libexec/gvfsd-metadata
+root	1	2763982	0	Sep21	?	00:00:00	/usr/sbin/cupsd
+root	1	2763985	0	Sep21	?	00:00:09	/usr/sbin/cups-browsed
+aaa1058	2608645	2779084	0	02:53	?	00:00:00	/usr/bin/pulseaudio
+ajs0523	1	2841623	0	12:54	?	00:00:04	/lib/systemd/systemd
+ajs0523	2841623	2841803	0	12:54	?	00:00:00	(sd-pam)
+ajs0523	2841623	2841813	0	12:54	?	00:00:00	/usr/libexec/tracker-miner-fs
+ajs0523	2841623	2841816	0	12:54	?	00:00:00	/usr/bin/dbus-daemon
+ajs0523	2841623	2841864	0	12:54	?	00:00:00	/usr/libexec/gvfsd
+ajs0523	2841623	2841872	0	12:54	?	00:00:00	/usr/libexec/gvfsd-fuse
+ajs0523	2841623	2841876	0	12:54	?	00:00:07	/usr/libexec/gvfs-udisks2-volume-monitor
+ajs0523	2841623	2841903	0	12:55	?	00:00:00	/usr/libexec/gvfs-goa-volume-monitor
+ajs0523	2841623	2841907	0	12:55	?	00:00:01	/usr/libexec/goa-daemon
+ajs0523	2841623	2841915	0	12:55	?	00:00:00	/usr/libexec/goa-identity-service
+ajs0523	2841623	2841917	0	12:55	?	00:00:00	/usr/bin/gnome-keyring-daemon
+ajs0523	2841623	2841926	0	12:55	?	00:00:00	/usr/libexec/gvfs-gphoto2-volume-monitor
+ajs0523	2841623	2841930	0	12:55	?	00:00:00	/usr/libexec/gvfs-mtp-volume-monitor
+ajs0523	2841623	2841934	0	12:55	?	00:00:00	/usr/libexec/gvfs-afc-volume-monitor
+ajs0523	2841623	2841954	0	12:55	?	00:00:00	/usr/libexec/gvfsd-metadata
+root	966	2959472	0	18:00	?	00:00:00	sshd:
+ag1425	1	2959498	0	18:00	?	00:00:02	/lib/systemd/systemd
+ag1425	2959498	2959556	0	18:00	?	00:00:00	(sd-pam)
+ag1425	2959498	2959563	0	18:00	?	00:00:00	/usr/libexec/tracker-miner-fs
+ag1425	2959498	2959574	0	18:00	?	00:00:00	/usr/bin/dbus-daemon
+ag1425	2959472	2959619	0	18:00	?	00:00:01	sshd:
+ag1425	2959498	2959634	0	18:00	?	00:00:00	/usr/libexec/gvfsd
+ag1425	2959498	2959639	0	18:00	?	00:00:00	/usr/libexec/gvfsd-fuse
+ag1425	2959498	2959641	0	18:00	?	00:00:01	/usr/libexec/gvfs-udisks2-volume-monitor
+ag1425	2959498	2959653	0	18:00	?	00:00:00	/usr/libexec/gvfs-goa-volume-monitor
+ag1425	2959498	2959657	0	18:00	?	00:00:00	/usr/libexec/goa-daemon
+ag1425	2959498	2959664	0	18:00	?	00:00:00	/usr/libexec/goa-identity-service
+ag1425	2959498	2959669	0	18:00	?	00:00:00	/usr/bin/gnome-keyring-daemon
+ag1425	2959498	2959675	0	18:00	?	00:00:00	/usr/libexec/gvfs-gphoto2-volume-monitor
+ag1425	2959498	2959679	0	18:00	?	00:00:00	/usr/libexec/gvfs-mtp-volume-monitor
+ag1425	2959498	2959683	0	18:00	?	00:00:00	/usr/libexec/gvfs-afc-volume-monitor
+ag1425	2959619	2959706	0	18:00	pts/20	00:00:00	-bash
+jmh0834	1	2962986	0	18:14	?	00:00:02	/lib/systemd/systemd
+jmh0834	2962986	2962989	0	18:14	?	00:00:00	(sd-pam)
+jmh0834	2962986	2962996	0	18:14	?	00:00:00	/usr/libexec/tracker-miner-fs
+jmh0834	2962986	2963004	0	18:14	?	00:00:00	/usr/bin/dbus-daemon
+jmh0834	2962986	2963022	0	18:14	?	00:00:00	/usr/libexec/gvfsd
+jmh0834	2962986	2963038	0	18:14	?	00:00:00	/usr/libexec/gvfsd-fuse
+jmh0834	2962986	2963041	0	18:14	?	00:00:01	/usr/libexec/gvfs-udisks2-volume-monitor
+jmh0834	2962986	2963074	0	18:14	?	00:00:00	/usr/libexec/gvfs-goa-volume-monitor
+jmh0834	2962986	2963080	0	18:14	?	00:00:00	/usr/libexec/goa-daemon
+jmh0834	2962986	2963097	0	18:14	?	00:00:00	/usr/libexec/goa-identity-service
+jmh0834	2962986	2963102	0	18:14	?	00:00:00	/usr/bin/gnome-keyring-daemon
+jmh0834	2962986	2963108	0	18:14	?	00:00:00	/usr/libexec/gvfs-gphoto2-volume-monitor
+jmh0834	2962986	2963112	0	18:14	?	00:00:00	/usr/libexec/gvfs-mtp-volume-monitor
+jmh0834	2962986	2963116	0	18:14	?	00:00:00	/usr/libexec/gvfs-afc-volume-monitor
+root	966	2963683	0	18:20	?	00:00:00	sshd:
+jes0393	1	2963739	0	18:21	?	00:00:02	/lib/systemd/systemd
+jes0393	2963739	2963742	0	18:21	?	00:00:00	(sd-pam)
+jes0393	2963739	2963749	0	18:21	?	00:00:00	/usr/libexec/tracker-miner-fs
+jes0393	2963739	2963765	0	18:21	?	00:00:00	/usr/bin/dbus-daemon
+jes0393	2963739	2963775	0	18:21	?	00:00:00	/usr/libexec/gvfsd
+jes0393	2963739	2963791	0	18:21	?	00:00:00	/usr/libexec/gvfsd-fuse
+jes0393	2963739	2963792	0	18:21	?	00:00:01	/usr/libexec/gvfs-udisks2-volume-monitor
+jes0393	2963739	2963811	0	18:21	?	00:00:00	/usr/libexec/gvfs-goa-volume-monitor
+jes0393	2963739	2963817	0	18:21	?	00:00:00	/usr/libexec/goa-daemon
+jes0393	2963739	2963831	0	18:21	?	00:00:00	/usr/libexec/goa-identity-service
+jes0393	2963739	2963838	0	18:21	?	00:00:00	/usr/bin/gnome-keyring-daemon
+jes0393	2963683	2963859	0	18:21	?	00:00:00	sshd:
+jes0393	2963739	2963861	0	18:21	?	00:00:00	/usr/libexec/gvfs-gphoto2-volume-monitor
+jes0393	2963739	2963866	0	18:21	?	00:00:00	/usr/libexec/gvfs-mtp-volume-monitor
+jes0393	2963739	2963870	0	18:21	?	00:00:00	/usr/libexec/gvfs-afc-volume-monitor
+jes0393	2963859	2963888	0	18:21	pts/8	00:00:00	-bash
+root	966	2963913	0	18:21	?	00:00:00	sshd:
+jar0582	1	2963925	0	18:21	?	00:00:02	/lib/systemd/systemd
+jar0582	2963925	2963927	0	18:21	?	00:00:00	(sd-pam)
+jar0582	2963925	2963934	0	18:21	?	00:00:00	/usr/libexec/tracker-miner-fs
+jar0582	2963925	2963944	0	18:21	?	00:00:00	/usr/bin/dbus-daemon
+jar0582	2963925	2963971	0	18:21	?	00:00:00	/usr/libexec/gvfsd
+jar0582	2963925	2963979	0	18:21	?	00:00:00	/usr/libexec/gvfsd-fuse
+jar0582	2963925	2963986	0	18:21	?	00:00:01	/usr/libexec/gvfs-udisks2-volume-monitor
+jar0582	2963913	2964023	0	18:21	?	00:00:00	sshd:
+jar0582	2963925	2964024	0	18:21	?	00:00:00	/usr/libexec/gvfs-goa-volume-monitor
+jar0582	2963925	2964028	0	18:21	?	00:00:00	/usr/libexec/goa-daemon
+jar0582	2963925	2964035	0	18:21	?	00:00:00	/usr/libexec/goa-identity-service
+jar0582	2963925	2964037	0	18:21	?	00:00:00	/usr/bin/gnome-keyring-daemon
+jar0582	2963925	2964046	0	18:21	?	00:00:00	/usr/libexec/gvfs-gphoto2-volume-monitor
+jar0582	2963925	2964050	0	18:21	?	00:00:00	/usr/libexec/gvfs-mtp-volume-monitor
+jar0582	2963925	2964054	0	18:21	?	00:00:00	/usr/libexec/gvfs-afc-volume-monitor
+jar0582	2964023	2964078	0	18:21	pts/22	00:00:00	-bash
+root	966	2964373	0	18:22	?	00:00:00	sshd:
+jes0393	2964373	2964463	0	18:23	?	00:00:00	sshd:
+jes0393	2964463	2964466	0	18:23	?	00:00:00	/usr/lib/openssh/sftp-server
+jmh0834	2962986	2965280	0	18:29	?	00:00:00	/usr/libexec/gvfsd-metadata
+root	966	2967690	0	18:40	?	00:00:00	sshd:
+mp0841	1	2967758	0	18:41	?	00:00:01	/lib/systemd/systemd
+mp0841	2967758	2967760	0	18:41	?	00:00:00	(sd-pam)
+mp0841	2967758	2967774	0	18:41	?	00:00:00	/usr/bin/dbus-daemon
+mp0841	2967758	2967823	0	18:41	?	00:00:00	/usr/libexec/gvfsd
+mp0841	2967758	2967836	0	18:41	?	00:00:00	/usr/libexec/gvfsd-fuse
+mp0841	2967690	2967845	0	18:41	?	00:00:00	sshd:
+mp0841	2967758	2967846	0	18:41	?	00:00:01	/usr/libexec/gvfs-udisks2-volume-monitor
+mp0841	2967758	2967861	0	18:41	?	00:00:00	/usr/libexec/gvfs-goa-volume-monitor
+mp0841	2967758	2967865	0	18:41	?	00:00:00	/usr/libexec/goa-daemon
+mp0841	2967758	2967872	0	18:41	?	00:00:00	/usr/libexec/goa-identity-service
+mp0841	2967758	2967877	0	18:41	?	00:00:00	/usr/libexec/gvfs-gphoto2-volume-monitor
+mp0841	2967758	2967881	0	18:41	?	00:00:00	/usr/libexec/gvfs-mtp-volume-monitor
+mp0841	2967758	2967886	0	18:41	?	00:00:00	/usr/libexec/gvfs-afc-volume-monitor
+mp0841	2967845	2967910	0	18:41	pts/15	00:00:00	-bash
+mp0841	2967758	2968217	0	18:42	?	00:00:00	/usr/libexec/tracker-miner-fs
+mp0841	2967758	2968311	0	18:42	?	00:00:00	/usr/libexec/gvfsd-metadata
+root	966	2969114	0	18:51	?	00:00:00	sshd:
+jfw0085	1	2969128	0	18:51	?	00:00:01	/lib/systemd/systemd
+jfw0085	2969128	2969131	0	18:51	?	00:00:00	(sd-pam)
+jfw0085	2969128	2969138	0	18:51	?	00:00:00	/usr/libexec/tracker-miner-fs
+jfw0085	2969128	2969151	0	18:51	?	00:00:00	/usr/bin/dbus-daemon
+jfw0085	2969128	2969187	0	18:51	?	00:00:00	/usr/libexec/gvfsd
+jfw0085	2969128	2969193	0	18:51	?	00:00:00	/usr/libexec/gvfsd-fuse
+jfw0085	2969128	2969197	0	18:51	?	00:00:01	/usr/libexec/gvfs-udisks2-volume-monitor
+jfw0085	2969114	2969248	0	18:51	?	00:00:01	sshd:
+jfw0085	2969128	2969254	0	18:51	?	00:00:00	/usr/libexec/gvfs-goa-volume-monitor
+jfw0085	2969128	2969258	0	18:51	?	00:00:00	/usr/libexec/goa-daemon
+jfw0085	2969128	2969268	0	18:51	?	00:00:00	/usr/libexec/goa-identity-service
+jfw0085	2969128	2969273	0	18:51	?	00:00:00	/usr/bin/gnome-keyring-daemon
+jfw0085	2969128	2969278	0	18:51	?	00:00:00	/usr/libexec/gvfs-gphoto2-volume-monitor
+jfw0085	2969128	2969283	0	18:51	?	00:00:00	/usr/libexec/gvfs-mtp-volume-monitor
+jfw0085	2969128	2969287	0	18:51	?	00:00:00	/usr/libexec/gvfs-afc-volume-monitor
+jfw0085	2969248	2969302	0	18:52	pts/10	00:00:00	-bash
+ag1425	2959706	2970699	0	18:58	pts/20	00:00:00	python3
+root	966	2972476	0	19:06	?	00:00:00	sshd:
+mrc0391	1	2972489	0	19:06	?	00:00:01	/lib/systemd/systemd
+mrc0391	2972489	2972490	0	19:06	?	00:00:00	(sd-pam)
+mrc0391	2972489	2972497	0	19:06	?	00:00:00	/usr/libexec/tracker-miner-fs
+mrc0391	2972489	2972518	0	19:06	?	00:00:00	/usr/bin/dbus-daemon
+mrc0391	2972489	2972542	0	19:06	?	00:00:00	/usr/libexec/gvfsd
+mrc0391	2972489	2972548	0	19:06	?	00:00:00	/usr/libexec/gvfsd-fuse
+mrc0391	2972489	2972563	0	19:06	?	00:00:01	/usr/libexec/gvfs-udisks2-volume-monitor
+mrc0391	2972476	2972588	0	19:06	?	00:00:00	sshd:
+mrc0391	2972489	2972589	0	19:06	?	00:00:00	/usr/libexec/gvfs-goa-volume-monitor
+mrc0391	2972489	2972593	0	19:06	?	00:00:00	/usr/libexec/goa-daemon
+mrc0391	2972489	2972600	0	19:06	?	00:00:00	/usr/libexec/goa-identity-service
+mrc0391	2972489	2972604	0	19:06	?	00:00:00	/usr/bin/gnome-keyring-daemon
+mrc0391	2972489	2972610	0	19:06	?	00:00:00	/usr/libexec/gvfs-gphoto2-volume-monitor
+mrc0391	2972489	2972615	0	19:06	?	00:00:00	/usr/libexec/gvfs-mtp-volume-monitor
+mrc0391	2972489	2972619	0	19:06	?	00:00:00	/usr/libexec/gvfs-afc-volume-monitor
+mrc0391	2972588	2972636	0	19:06	pts/4	00:00:00	-bash
+root	966	2972727	0	19:08	?	00:00:00	sshd:
+jmh0834	2972727	2972787	0	19:08	?	00:00:00	sshd:
+jmh0834	2972787	2972789	0	19:08	?	00:00:00	/usr/lib/openssh/sftp-server
+root	966	2973138	0	19:10	?	00:00:00	sshd:
+asn0067	1	2973339	0	19:11	?	00:00:01	/lib/systemd/systemd
+asn0067	2973339	2973342	0	19:11	?	00:00:00	(sd-pam)
+asn0067	2973339	2973349	0	19:11	?	00:00:00	/usr/libexec/tracker-miner-fs
+asn0067	2973339	2973370	0	19:11	?	00:00:00	/usr/bin/dbus-daemon
+asn0067	2973339	2973399	0	19:11	?	00:00:00	/usr/libexec/gvfsd
+asn0067	2973339	2973405	0	19:11	?	00:00:00	/usr/libexec/gvfsd-fuse
+asn0067	2973339	2973416	0	19:11	?	00:00:01	/usr/libexec/gvfs-udisks2-volume-monitor
+asn0067	2973138	2973438	0	19:11	?	00:00:00	sshd:
+asn0067	2973339	2973440	0	19:11	?	00:00:00	/usr/libexec/gvfs-goa-volume-monitor
+asn0067	2973339	2973444	0	19:11	?	00:00:00	/usr/libexec/goa-daemon
+asn0067	2973339	2973451	0	19:11	?	00:00:00	/usr/libexec/goa-identity-service
+asn0067	2973339	2973455	0	19:11	?	00:00:00	/usr/bin/gnome-keyring-daemon
+asn0067	2973339	2973462	0	19:11	?	00:00:00	/usr/libexec/gvfs-gphoto2-volume-monitor
+asn0067	2973339	2973467	0	19:11	?	00:00:00	/usr/libexec/gvfs-mtp-volume-monitor
+asn0067	2973339	2973471	0	19:11	?	00:00:00	/usr/libexec/gvfs-afc-volume-monitor
+asn0067	2973438	2973486	0	19:11	pts/36	00:00:00	-bash
+root	966	2975700	0	19:25	?	00:00:00	sshd:
+kr1148	1	2975731	0	19:26	?	00:00:01	/lib/systemd/systemd
+kr1148	2975731	2975737	0	19:26	?	00:00:00	(sd-pam)
+kr1148	2975731	2975745	0	19:26	?	00:00:00	/usr/libexec/tracker-miner-fs
+kr1148	2975731	2975766	0	19:26	?	00:00:00	/usr/bin/dbus-daemon
+kr1148	2975731	2975792	0	19:26	?	00:00:00	/usr/libexec/gvfsd
+kr1148	2975731	2975801	0	19:26	?	00:00:00	/usr/libexec/gvfsd-fuse
+kr1148	2975731	2975804	0	19:26	?	00:00:01	/usr/libexec/gvfs-udisks2-volume-monitor
+kr1148	2975700	2975880	0	19:26	?	00:00:00	sshd:
+kr1148	2975731	2975882	0	19:26	?	00:00:00	/usr/libexec/gvfs-goa-volume-monitor
+kr1148	2975731	2975886	0	19:26	?	00:00:00	/usr/libexec/goa-daemon
+kr1148	2975731	2975894	0	19:26	?	00:00:00	/usr/libexec/goa-identity-service
+kr1148	2975731	2975900	0	19:26	?	00:00:00	/usr/libexec/gvfs-gphoto2-volume-monitor
+kr1148	2975731	2975904	0	19:26	?	00:00:00	/usr/libexec/gvfs-mtp-volume-monitor
+kr1148	2975731	2975908	0	19:26	?	00:00:00	/usr/libexec/gvfs-afc-volume-monitor
+kr1148	2975731	2975934	0	19:26	?	00:00:00	/usr/libexec/gvfsd-metadata
+kr1148	2975880	2975946	0	19:26	pts/42	00:00:00	-bash
+root	2	2978115	0	19:36	?	00:00:04	[kworker/u256:0-nfsiod]
+asn0067	2973486	2978971	0	19:40	pts/36	00:00:00	vim
+root	966	2979622	0	19:42	?	00:00:00	sshd:
+bxp0005	1	2979839	0	19:42	?	00:00:01	/lib/systemd/systemd
+bxp0005	2979839	2979851	0	19:42	?	00:00:00	(sd-pam)
+bxp0005	2979839	2979859	0	19:42	?	00:00:00	/usr/libexec/tracker-miner-fs
+bxp0005	2979839	2979869	0	19:42	?	00:00:00	/usr/bin/dbus-daemon
+bxp0005	2979839	2979906	0	19:42	?	00:00:00	/usr/libexec/gvfsd
+bxp0005	2979839	2979912	0	19:42	?	00:00:00	/usr/libexec/gvfsd-fuse
+bxp0005	2979839	2979919	0	19:42	?	00:00:01	/usr/libexec/gvfs-udisks2-volume-monitor
+bxp0005	2979622	2979950	0	19:42	?	00:00:01	sshd:
+bxp0005	2979839	2979952	0	19:42	?	00:00:00	/usr/libexec/gvfs-goa-volume-monitor
+bxp0005	2979839	2979956	0	19:42	?	00:00:00	/usr/libexec/goa-daemon
+bxp0005	2979839	2979965	0	19:42	?	00:00:00	/usr/libexec/goa-identity-service
+bxp0005	2979839	2979967	0	19:42	?	00:00:00	/usr/bin/gnome-keyring-daemon
+bxp0005	2979839	2979976	0	19:42	?	00:00:00	/usr/libexec/gvfs-gphoto2-volume-monitor
+bxp0005	2979839	2979981	0	19:42	?	00:00:00	/usr/libexec/gvfs-mtp-volume-monitor
+bxp0005	2979839	2979985	0	19:42	?	00:00:00	/usr/libexec/gvfs-afc-volume-monitor
+bxp0005	2979950	2980002	0	19:42	pts/17	00:00:00	-bash
+root	966	2980113	0	19:43	?	00:00:00	sshd:
+ao0296	1	2980118	0	19:43	?	00:00:01	/lib/systemd/systemd
+ao0296	2980118	2980124	0	19:43	?	00:00:00	(sd-pam)
+ao0296	2980118	2980131	0	19:43	?	00:00:00	/usr/libexec/tracker-miner-fs
+ao0296	2980118	2980141	0	19:43	?	00:00:00	/usr/bin/dbus-daemon
+ao0296	2980118	2980168	0	19:43	?	00:00:00	/usr/libexec/gvfsd
+ao0296	2980118	2980173	0	19:43	?	00:00:00	/usr/libexec/gvfsd-fuse
+ao0296	2980118	2980175	0	19:43	?	00:00:01	/usr/libexec/gvfs-udisks2-volume-monitor
+ao0296	2980118	2980202	0	19:43	?	00:00:00	/usr/libexec/gvfs-goa-volume-monitor
+ao0296	2980118	2980207	0	19:43	?	00:00:00	/usr/libexec/goa-daemon
+ao0296	2980118	2980232	0	19:43	?	00:00:00	/usr/libexec/goa-identity-service
+ao0296	2980118	2980237	0	19:43	?	00:00:00	/usr/bin/gnome-keyring-daemon
+ao0296	2980118	2980242	0	19:43	?	00:00:00	/usr/libexec/gvfs-gphoto2-volume-monitor
+ao0296	2980118	2980247	0	19:43	?	00:00:00	/usr/libexec/gvfs-mtp-volume-monitor
+ao0296	2980118	2980251	0	19:43	?	00:00:00	/usr/libexec/gvfs-afc-volume-monitor
+ao0296	2980113	2980693	0	19:43	?	00:00:00	sshd:
+ao0296	2980693	2980694	0	19:43	pts/31	00:00:00	-bash
+root	966	2980987	0	19:44	?	00:00:00	sshd:
+ao0296	2980987	2981073	0	19:44	?	00:00:00	sshd:
+ao0296	2981073	2981076	0	19:44	?	00:00:00	/usr/lib/openssh/sftp-server
+root	966	2981655	0	19:48	?	00:00:00	sshd:
+at0740	1	2981669	0	19:49	?	00:00:01	/lib/systemd/systemd
+at0740	2981669	2981677	0	19:49	?	00:00:00	(sd-pam)
+at0740	2981669	2981684	0	19:49	?	00:00:01	/usr/libexec/tracker-miner-fs
+at0740	2981669	2981700	0	19:49	?	00:00:00	/usr/bin/dbus-daemon
+at0740	2981669	2981709	0	19:49	?	00:00:00	/usr/libexec/gvfsd
+at0740	2981669	2981718	0	19:49	?	00:00:00	/usr/libexec/gvfsd-fuse
+at0740	2981669	2981726	0	19:49	?	00:00:01	/usr/libexec/gvfs-udisks2-volume-monitor
+at0740	2981655	2981772	0	19:49	?	00:00:01	sshd:
+at0740	2981669	2981774	0	19:49	?	00:00:00	/usr/libexec/gvfs-goa-volume-monitor
+at0740	2981669	2981778	0	19:49	?	00:00:00	/usr/libexec/goa-daemon
+at0740	2981669	2981785	0	19:49	?	00:00:00	/usr/libexec/goa-identity-service
+at0740	2981669	2981790	0	19:49	?	00:00:00	/usr/bin/gnome-keyring-daemon
+at0740	2981669	2981795	0	19:49	?	00:00:00	/usr/libexec/gvfs-gphoto2-volume-monitor
+at0740	2981669	2981800	0	19:49	?	00:00:00	/usr/libexec/gvfs-mtp-volume-monitor
+at0740	2981669	2981804	0	19:49	?	00:00:00	/usr/libexec/gvfs-afc-volume-monitor
+at0740	2981772	2981820	0	19:49	pts/11	00:00:00	-bash
+at0740	2981669	2982383	0	19:52	?	00:00:00	/usr/libexec/gvfsd-metadata
+root	966	2982772	0	19:55	?	00:00:00	sshd:
+jmh0834	2982772	2982864	0	19:55	?	00:00:00	sshd:
+jmh0834	2982864	2982867	0	19:55	pts/14	00:00:00	-bash
+kr1148	2975731	2982986	0	19:56	?	00:00:00	/usr/bin/gnome-keyring-daemon
+root	966	2983032	0	19:56	?	00:00:00	sshd:
+ajs0523	2983032	2983097	0	19:56	?	00:00:00	sshd:
+ajs0523	2983097	2983099	0	19:56	?	00:00:00	/usr/lib/openssh/sftp-server
+ao0296	2980118	2985075	0	20:02	?	00:00:00	/usr/libexec/gvfsd-metadata
+root	966	2985927	0	20:08	?	00:00:00	sshd:
+jar0582	2985927	2985991	0	20:08	?	00:00:00	sshd:
+jar0582	2985991	2985993	0	20:08	pts/1	00:00:00	-bash
+root	966	2986679	0	20:12	?	00:00:00	sshd:
+jmh0834	2986679	2986759	0	20:12	?	00:00:00	sshd:
+jmh0834	2986759	2986764	0	20:12	?	00:00:00	/usr/lib/openssh/sftp-server
+root	2	2987432	0	20:15	?	00:00:02	[kworker/u256:1-events_freezable_power_]
+at0740	2981820	2987670	0	20:17	pts/11	00:00:00	nano
+zad0020	1	2987820	0	20:19	?	00:00:01	/lib/systemd/systemd
+zad0020	2987820	2987836	0	20:19	?	00:00:00	(sd-pam)
+zad0020	2987820	2987849	0	20:19	?	00:00:00	/usr/libexec/tracker-miner-fs
+zad0020	2987820	2987854	0	20:19	?	00:00:00	/usr/bin/dbus-daemon
+zad0020	2987820	2987873	0	20:19	?	00:00:00	/usr/libexec/gvfsd
+zad0020	2987820	2987893	0	20:19	?	00:00:00	/usr/libexec/gvfsd-fuse
+zad0020	2987820	2987895	0	20:19	?	00:00:00	/usr/libexec/gvfs-udisks2-volume-monitor
+zad0020	2987820	2987932	0	20:19	?	00:00:00	/usr/libexec/gvfs-goa-volume-monitor
+zad0020	2987820	2987936	0	20:19	?	00:00:00	/usr/libexec/goa-daemon
+zad0020	2987820	2987946	0	20:19	?	00:00:00	/usr/libexec/goa-identity-service
+zad0020	2987820	2987949	0	20:19	?	00:00:00	/usr/bin/gnome-keyring-daemon
+zad0020	2987820	2987958	0	20:19	?	00:00:00	/usr/libexec/gvfs-gphoto2-volume-monitor
+zad0020	2987820	2987962	0	20:19	?	00:00:00	/usr/libexec/gvfs-mtp-volume-monitor
+zad0020	2987820	2987966	0	20:19	?	00:00:00	/usr/libexec/gvfs-afc-volume-monitor
+root	2	2988408	0	20:22	?	00:00:02	[kworker/u256:2-nfsiod]
+root	966	2988455	0	20:23	?	00:00:00	sshd:
+zad0020	2988455	2988525	0	20:23	?	00:00:00	sshd:
+zad0020	2988525	2988528	0	20:23	pts/26	00:00:00	-bash
+root	966	2988681	0	20:24	?	00:00:00	sshd:
+ygm0004	1	2988730	0	20:25	?	00:00:01	/lib/systemd/systemd
+kr1148	2975946	2988731	0	20:25	pts/42	00:00:00	vim
+ygm0004	2988730	2988733	0	20:25	?	00:00:00	(sd-pam)
+ygm0004	2988730	2988744	0	20:25	?	00:00:00	/usr/libexec/tracker-miner-fs
+ygm0004	2988730	2988761	0	20:25	?	00:00:00	/usr/bin/dbus-daemon
+ygm0004	2988730	2988788	0	20:25	?	00:00:00	/usr/libexec/gvfsd
+ygm0004	2988730	2988795	0	20:25	?	00:00:00	/usr/libexec/gvfsd-fuse
+ygm0004	2988730	2988800	0	20:25	?	00:00:00	/usr/libexec/gvfs-udisks2-volume-monitor
+ygm0004	2988681	2988829	0	20:25	?	00:00:00	sshd:
+ygm0004	2988730	2988830	0	20:25	?	00:00:00	/usr/libexec/gvfs-goa-volume-monitor
+ygm0004	2988730	2988834	0	20:25	?	00:00:00	/usr/libexec/goa-daemon
+ygm0004	2988730	2988842	0	20:25	?	00:00:00	/usr/libexec/goa-identity-service
+ygm0004	2988730	2988846	0	20:25	?	00:00:00	/usr/bin/gnome-keyring-daemon
+ygm0004	2988730	2988853	0	20:25	?	00:00:00	/usr/libexec/gvfs-gphoto2-volume-monitor
+ygm0004	2988730	2988857	0	20:25	?	00:00:00	/usr/libexec/gvfs-mtp-volume-monitor
+ygm0004	2988730	2988861	0	20:25	?	00:00:00	/usr/libexec/gvfs-afc-volume-monitor
+ygm0004	2988829	2988877	0	20:25	pts/23	00:00:00	-bash
+root	966	2989110	0	20:27	?	00:00:00	sshd:
+ict0011	1	2989155	0	20:27	?	00:00:01	/lib/systemd/systemd
+ict0011	2989155	2989157	0	20:27	?	00:00:00	(sd-pam)
+ict0011	2989155	2989164	0	20:27	?	00:00:00	/usr/libexec/tracker-miner-fs
+ict0011	2989155	2989176	0	20:27	?	00:00:00	/usr/bin/dbus-daemon
+ict0011	2989155	2989202	0	20:27	?	00:00:00	/usr/libexec/gvfsd
+ict0011	2989155	2989213	0	20:27	?	00:00:00	/usr/libexec/gvfsd-fuse
+ict0011	2989155	2989216	0	20:27	?	00:00:00	/usr/libexec/gvfs-udisks2-volume-monitor
+ict0011	2989155	2989240	0	20:27	?	00:00:00	/usr/libexec/gvfs-goa-volume-monitor
+ict0011	2989155	2989247	0	20:27	?	00:00:00	/usr/libexec/goa-daemon
+ict0011	2989110	2989259	0	20:27	?	00:00:00	sshd:
+ict0011	2989155	2989267	0	20:27	?	00:00:00	/usr/libexec/goa-identity-service
+ict0011	2989155	2989271	0	20:27	?	00:00:00	/usr/bin/gnome-keyring-daemon
+ict0011	2989155	2989278	0	20:27	?	00:00:00	/usr/libexec/gvfs-gphoto2-volume-monitor
+ict0011	2989155	2989282	0	20:27	?	00:00:00	/usr/libexec/gvfs-mtp-volume-monitor
+ict0011	2989155	2989286	0	20:27	?	00:00:00	/usr/libexec/gvfs-afc-volume-monitor
+ict0011	2989259	2989310	0	20:27	?	00:00:00	/usr/lib/openssh/sftp-server
+root	966	2991001	0	20:32	?	00:00:00	sshd:
+pcs0079	1	2991025	0	20:32	?	00:00:01	/lib/systemd/systemd
+pcs0079	2991025	2991032	0	20:33	?	00:00:00	(sd-pam)
+pcs0079	2991025	2991039	0	20:33	?	00:00:00	/usr/libexec/tracker-miner-fs
+pcs0079	2991025	2991061	0	20:33	?	00:00:00	/usr/bin/dbus-daemon
+pcs0079	2991025	2991086	0	20:33	?	00:00:00	/usr/libexec/gvfsd
+pcs0079	2991025	2991092	0	20:33	?	00:00:00	/usr/libexec/gvfsd-fuse
+pcs0079	2991025	2991094	0	20:33	?	00:00:00	/usr/libexec/gvfs-udisks2-volume-monitor
+pcs0079	2991001	2991128	0	20:33	?	00:00:00	sshd:
+pcs0079	2991025	2991129	0	20:33	?	00:00:00	/usr/libexec/gvfs-goa-volume-monitor
+pcs0079	2991025	2991133	0	20:33	?	00:00:00	/usr/libexec/goa-daemon
+pcs0079	2991025	2991143	0	20:33	?	00:00:00	/usr/libexec/goa-identity-service
+pcs0079	2991025	2991144	0	20:33	?	00:00:00	/usr/bin/gnome-keyring-daemon
+pcs0079	2991025	2991152	0	20:33	?	00:00:00	/usr/libexec/gvfs-gphoto2-volume-monitor
+pcs0079	2991025	2991157	0	20:33	?	00:00:00	/usr/libexec/gvfs-mtp-volume-monitor
+pcs0079	2991025	2991161	0	20:33	?	00:00:00	/usr/libexec/gvfs-afc-volume-monitor
+root	966	2991178	0	20:33	?	00:00:00	sshd:
+pcs0079	2991128	2991180	0	20:33	pts/12	00:00:00	-bash
+gm0394	1	2991283	0	20:33	?	00:00:01	/lib/systemd/systemd
+gm0394	2991283	2991288	0	20:33	?	00:00:00	(sd-pam)
+gm0394	2991283	2991295	0	20:33	?	00:00:00	/usr/libexec/tracker-miner-fs
+gm0394	2991283	2991304	0	20:33	?	00:00:00	/usr/bin/dbus-daemon
+gm0394	2991283	2991349	0	20:33	?	00:00:00	/usr/libexec/gvfsd
+gm0394	2991283	2991357	0	20:33	?	00:00:00	/usr/libexec/gvfsd-fuse
+gm0394	2991283	2991358	0	20:33	?	00:00:00	/usr/libexec/gvfs-udisks2-volume-monitor
+gm0394	2991178	2991377	0	20:33	?	00:00:00	sshd:
+gm0394	2991283	2991386	0	20:33	?	00:00:00	/usr/libexec/gvfs-goa-volume-monitor
+gm0394	2991283	2991390	0	20:33	?	00:00:00	/usr/libexec/goa-daemon
+gm0394	2991283	2991397	0	20:33	?	00:00:00	/usr/libexec/goa-identity-service
+gm0394	2991283	2991401	0	20:33	?	00:00:00	/usr/bin/gnome-keyring-daemon
+gm0394	2991283	2991408	0	20:33	?	00:00:00	/usr/libexec/gvfs-gphoto2-volume-monitor
+gm0394	2991283	2991413	0	20:33	?	00:00:00	/usr/libexec/gvfs-mtp-volume-monitor
+gm0394	2991283	2991417	0	20:33	?	00:00:00	/usr/libexec/gvfs-afc-volume-monitor
+gm0394	2991283	2991437	0	20:33	?	00:00:00	/usr/libexec/gvfsd-metadata
+gm0394	2991377	2991442	0	20:33	pts/33	00:00:00	-bash
+pcs0079	2991025	2991969	0	20:36	?	00:00:00	/usr/libexec/gvfsd-metadata
+root	966	2992152	0	20:38	?	00:00:00	sshd:
+jcw0356	1	2992183	0	20:38	?	00:00:01	/lib/systemd/systemd
+jcw0356	2992183	2992197	0	20:38	?	00:00:00	(sd-pam)
+jcw0356	2992183	2992206	0	20:38	?	00:00:00	/usr/bin/dbus-daemon
+jcw0356	2992183	2992231	0	20:38	?	00:00:00	/usr/libexec/gvfsd
+jcw0356	2992183	2992254	0	20:38	?	00:00:00	/usr/libexec/gvfsd-fuse
+jcw0356	2992183	2992257	0	20:38	?	00:00:00	/usr/libexec/gvfs-udisks2-volume-monitor
+jcw0356	2992152	2992293	0	20:38	?	00:00:00	sshd:
+jcw0356	2992183	2992294	0	20:38	?	00:00:00	/usr/libexec/gvfs-goa-volume-monitor
+jcw0356	2992183	2992298	0	20:38	?	00:00:00	/usr/libexec/goa-daemon
+jcw0356	2992183	2992306	0	20:38	?	00:00:00	/usr/libexec/goa-identity-service
+jcw0356	2992183	2992312	0	20:38	?	00:00:00	/usr/libexec/gvfs-gphoto2-volume-monitor
+jcw0356	2992183	2992316	0	20:38	?	00:00:00	/usr/libexec/gvfs-mtp-volume-monitor
+jcw0356	2992183	2992320	0	20:38	?	00:00:00	/usr/libexec/gvfs-afc-volume-monitor
+jcw0356	2992293	2992339	0	20:38	pts/24	00:00:00	-bash
+at0740	2981820	2992485	0	20:40	pts/11	00:00:00	nano
+jcw0356	2992183	2992506	0	20:40	?	00:00:00	/usr/libexec/tracker-miner-fs
+jcw0356	2992183	2992603	0	20:40	?	00:00:00	/usr/libexec/gvfsd-metadata
+root	966	2993183	0	20:45	?	00:00:00	sshd:
+gos0018	1	2993200	0	20:45	?	00:00:01	/lib/systemd/systemd
+gos0018	2993200	2993203	0	20:45	?	00:00:00	(sd-pam)
+gos0018	2993200	2993210	0	20:45	?	00:00:00	/usr/libexec/tracker-miner-fs
+gos0018	2993200	2993212	0	20:45	?	00:00:00	/usr/bin/dbus-daemon
+gos0018	2993200	2993236	0	20:45	?	00:00:00	/usr/libexec/gvfsd
+gos0018	2993200	2993241	0	20:45	?	00:00:00	/usr/libexec/gvfsd-fuse
+gos0018	2993200	2993249	0	20:45	?	00:00:00	/usr/libexec/gvfs-udisks2-volume-monitor
+gos0018	2993200	2993299	0	20:45	?	00:00:00	/usr/libexec/gvfs-goa-volume-monitor
+gos0018	2993200	2993303	0	20:45	?	00:00:00	/usr/libexec/goa-daemon
+gos0018	2993183	2993304	0	20:45	?	00:00:00	sshd:
+gos0018	2993200	2993312	0	20:45	?	00:00:00	/usr/libexec/goa-identity-service
+gos0018	2993200	2993317	0	20:45	?	00:00:00	/usr/bin/gnome-keyring-daemon
+gos0018	2993200	2993323	0	20:45	?	00:00:00	/usr/libexec/gvfs-gphoto2-volume-monitor
+gos0018	2993200	2993327	0	20:45	?	00:00:00	/usr/libexec/gvfs-mtp-volume-monitor
+gos0018	2993200	2993331	0	20:45	?	00:00:00	/usr/libexec/gvfs-afc-volume-monitor
+gos0018	2993304	2993348	0	20:45	pts/35	00:00:00	-bash
+root	966	2993678	0	20:47	?	00:00:00	sshd:
+bmv0045	1	2993694	0	20:47	?	00:00:01	/lib/systemd/systemd
+bmv0045	2993694	2993697	0	20:47	?	00:00:00	(sd-pam)
+bmv0045	2993694	2993704	0	20:47	?	00:00:00	/usr/libexec/tracker-miner-fs
+bmv0045	2993694	2993712	0	20:47	?	00:00:00	/usr/bin/dbus-daemon
+bmv0045	2993694	2993731	0	20:47	?	00:00:00	/usr/libexec/gvfsd
+bmv0045	2993694	2993747	0	20:47	?	00:00:00	/usr/libexec/gvfsd-fuse
+bmv0045	2993694	2993749	0	20:47	?	00:00:00	/usr/libexec/gvfs-udisks2-volume-monitor
+bmv0045	2993678	2993793	0	20:47	?	00:00:00	sshd:
+bmv0045	2993694	2993795	0	20:47	?	00:00:00	/usr/libexec/gvfs-goa-volume-monitor
+bmv0045	2993694	2993799	0	20:47	?	00:00:00	/usr/libexec/goa-daemon
+bmv0045	2993694	2993807	0	20:47	?	00:00:00	/usr/libexec/goa-identity-service
+bmv0045	2993694	2993812	0	20:47	?	00:00:00	/usr/bin/gnome-keyring-daemon
+bmv0045	2993694	2993817	0	20:47	?	00:00:00	/usr/libexec/gvfs-gphoto2-volume-monitor
+bmv0045	2993694	2993822	0	20:47	?	00:00:00	/usr/libexec/gvfs-mtp-volume-monitor
+bmv0045	2993694	2993826	0	20:47	?	00:00:00	/usr/libexec/gvfs-afc-volume-monitor
+bmv0045	2993793	2993846	0	20:47	pts/38	00:00:00	-bash
+root	966	2994280	0	20:50	?	00:00:00	sshd:
+zad0020	2994280	2994384	0	20:51	?	00:00:00	sshd:
+zad0020	2994384	2994392	0	20:51	?	00:00:00	/usr/lib/openssh/sftp-server
+root	966	2994763	0	20:53	?	00:00:00	sshd:
+pcs0079	2994763	2994833	0	20:53	?	00:00:00	sshd:
+pcs0079	2994833	2994834	0	20:53	?	00:00:00	/usr/lib/openssh/sftp-server
+gos0018	2993348	2997296	0	20:59	pts/35	00:00:00	vim
+root	2	2997574	0	21:02	?	00:00:00	[kworker/0:2-events]
+root	966	2998744	0	21:09	?	00:00:00	sshd:
+UNT\dmk+	2998744	2998801	0	21:09	?	00:00:00	sshd:
+UNT\dmk+	2998801	2998802	0	21:09	?	00:00:00	/usr/lib/openssh/sftp-server
+mp0841	2967910	2999236	0	21:13	pts/15	00:00:00	nano
+root	966	2999391	0	21:14	?	00:00:00	sshd:
+ict0011	2999391	2999458	0	21:15	?	00:00:00	sshd:
+ict0011	2999458	2999461	0	21:15	pts/7	00:00:00	-bash
+root	966	2999598	0	21:15	?	00:00:00	sshd:
+njb0130	1	2999672	0	21:16	?	00:00:00	/lib/systemd/systemd
+njb0130	2999672	2999676	0	21:16	?	00:00:00	(sd-pam)
+njb0130	2999672	2999687	0	21:16	?	00:00:00	/usr/libexec/tracker-miner-fs
+njb0130	2999672	2999699	0	21:16	?	00:00:00	/usr/bin/dbus-daemon
+njb0130	2999672	2999752	0	21:16	?	00:00:00	/usr/libexec/gvfsd
+njb0130	2999672	2999758	0	21:16	?	00:00:00	/usr/libexec/gvfsd-fuse
+njb0130	2999672	2999761	0	21:16	?	00:00:00	/usr/libexec/gvfs-udisks2-volume-monitor
+njb0130	2999598	2999762	0	21:16	?	00:00:00	sshd:
+njb0130	2999672	2999773	0	21:16	?	00:00:00	/usr/libexec/gvfs-goa-volume-monitor
+njb0130	2999672	2999777	0	21:16	?	00:00:00	/usr/libexec/goa-daemon
+njb0130	2999672	2999787	0	21:16	?	00:00:00	/usr/libexec/goa-identity-service
+njb0130	2999672	2999789	0	21:16	?	00:00:00	/usr/bin/gnome-keyring-daemon
+njb0130	2999672	2999797	0	21:16	?	00:00:00	/usr/libexec/gvfs-gphoto2-volume-monitor
+njb0130	2999672	2999802	0	21:16	?	00:00:00	/usr/libexec/gvfs-mtp-volume-monitor
+njb0130	2999672	2999806	0	21:16	?	00:00:00	/usr/libexec/gvfs-afc-volume-monitor
+njb0130	2999762	2999823	0	21:16	pts/19	00:00:00	-bash
+root	966	3000090	0	21:17	?	00:00:00	sshd:
+njb0130	2999672	3000125	0	21:17	?	00:00:00	/usr/libexec/gvfsd-metadata
+hak0065	1	3000136	0	21:17	?	00:00:00	/lib/systemd/systemd
+hak0065	3000136	3000141	0	21:17	?	00:00:00	(sd-pam)
+hak0065	3000136	3000148	0	21:17	?	00:00:00	/usr/libexec/tracker-miner-fs
+hak0065	3000136	3000154	0	21:17	?	00:00:00	/usr/bin/dbus-daemon
+hak0065	3000136	3000185	0	21:17	?	00:00:00	/usr/libexec/gvfsd
+hak0065	3000136	3000195	0	21:17	?	00:00:00	/usr/libexec/gvfsd-fuse
+hak0065	3000136	3000201	0	21:17	?	00:00:00	/usr/libexec/gvfs-udisks2-volume-monitor
+hak0065	3000136	3000233	0	21:17	?	00:00:00	/usr/libexec/gvfs-goa-volume-monitor
+hak0065	3000136	3000238	0	21:17	?	00:00:00	/usr/libexec/goa-daemon
+hak0065	3000090	3000242	0	21:17	?	00:00:00	sshd:
+hak0065	3000136	3000249	0	21:17	?	00:00:00	/usr/libexec/goa-identity-service
+hak0065	3000136	3000254	0	21:17	?	00:00:00	/usr/bin/gnome-keyring-daemon
+hak0065	3000136	3000260	0	21:17	?	00:00:00	/usr/libexec/gvfs-gphoto2-volume-monitor
+hak0065	3000136	3000265	0	21:17	?	00:00:00	/usr/libexec/gvfs-mtp-volume-monitor
+hak0065	3000136	3000269	0	21:17	?	00:00:00	/usr/libexec/gvfs-afc-volume-monitor
+root	2	3000283	0	21:17	?	00:00:00	[kworker/u257:0-xprtiod]
+hak0065	3000242	3000284	0	21:17	pts/2	00:00:00	-bash
+root	966	3000670	0	21:20	?	00:00:00	sshd:
+cdh0374	1	3000680	0	21:20	?	00:00:00	/lib/systemd/systemd
+cdh0374	3000680	3000683	0	21:20	?	00:00:00	(sd-pam)
+cdh0374	3000680	3000690	0	21:20	?	00:00:00	/usr/libexec/tracker-miner-fs
+cdh0374	3000680	3000711	0	21:20	?	00:00:00	/usr/bin/dbus-daemon
+cdh0374	3000680	3000732	0	21:20	?	00:00:00	/usr/libexec/gvfsd
+cdh0374	3000680	3000740	0	21:20	?	00:00:00	/usr/libexec/gvfsd-fuse
+cdh0374	3000680	3000741	0	21:20	?	00:00:00	/usr/libexec/gvfs-udisks2-volume-monitor
+cdh0374	3000670	3000779	0	21:20	?	00:00:00	sshd:
+cdh0374	3000680	3000780	0	21:20	?	00:00:00	/usr/libexec/gvfs-goa-volume-monitor
+cdh0374	3000680	3000784	0	21:20	?	00:00:00	/usr/libexec/goa-daemon
+cdh0374	3000680	3000791	0	21:20	?	00:00:00	/usr/libexec/goa-identity-service
+cdh0374	3000680	3000796	0	21:20	?	00:00:00	/usr/bin/gnome-keyring-daemon
+cdh0374	3000680	3000802	0	21:20	?	00:00:00	/usr/libexec/gvfs-gphoto2-volume-monitor
+cdh0374	3000680	3000806	0	21:20	?	00:00:00	/usr/libexec/gvfs-mtp-volume-monitor
+cdh0374	3000680	3000810	0	21:20	?	00:00:00	/usr/libexec/gvfs-afc-volume-monitor
+cdh0374	3000779	3000825	0	21:20	?	00:00:00	/usr/lib/openssh/sftp-server
+root	966	3001180	0	21:21	?	00:00:00	sshd:
+ona0015	1	3001200	0	21:22	?	00:00:00	/lib/systemd/systemd
+root	2	3001201	0	21:22	?	00:00:00	[kworker/1:4-events]
+ona0015	3001200	3001208	0	21:22	?	00:00:00	(sd-pam)
+ona0015	3001200	3001222	0	21:22	?	00:00:00	/usr/libexec/tracker-miner-fs
+ona0015	3001200	3001237	0	21:22	?	00:00:00	/usr/bin/dbus-daemon
+ona0015	3001200	3001265	0	21:22	?	00:00:00	/usr/libexec/gvfsd
+ona0015	3001200	3001271	0	21:22	?	00:00:00	/usr/libexec/gvfsd-fuse
+ona0015	3001200	3001279	0	21:22	?	00:00:00	/usr/libexec/gvfs-udisks2-volume-monitor
+ona0015	3001180	3001298	0	21:22	?	00:00:00	sshd:
+ona0015	3001200	3001306	0	21:22	?	00:00:00	/usr/libexec/gvfs-goa-volume-monitor
+ona0015	3001200	3001310	0	21:22	?	00:00:00	/usr/libexec/goa-daemon
+ona0015	3001200	3001319	0	21:22	?	00:00:00	/usr/libexec/goa-identity-service
+ona0015	3001200	3001320	0	21:22	?	00:00:00	/usr/bin/gnome-keyring-daemon
+ona0015	3001200	3001328	0	21:22	?	00:00:00	/usr/libexec/gvfs-gphoto2-volume-monitor
+ona0015	3001200	3001333	0	21:22	?	00:00:00	/usr/libexec/gvfs-mtp-volume-monitor
+ona0015	3001200	3001337	0	21:22	?	00:00:00	/usr/libexec/gvfs-afc-volume-monitor
+root	2	3001344	0	21:22	?	00:00:00	[kworker/u256:4-flush-0:58]
+ona0015	3001298	3001505	0	21:22	?	00:00:00	/usr/lib/openssh/sftp-server
+root	966	3001537	0	21:22	?	00:00:00	sshd:
+root	966	3001633	0	21:22	?	00:00:00	sshd:
+root	966	3001655	0	21:22	?	00:00:00	sshd:
+njb0130	3001537	3001690	0	21:22	?	00:00:00	sshd:
+njb0130	3001690	3001709	0	21:23	?	00:00:00	/usr/lib/openssh/sftp-server
+ona0015	3001633	3001773	0	21:23	?	00:00:00	sshd:
+ona0015	3001773	3001774	0	21:23	pts/16	00:00:00	-bash
+root	966	3001800	0	21:23	?	00:00:00	sshd:
+rjc0184	1	3001863	0	21:23	?	00:00:00	/lib/systemd/systemd
+rjc0184	3001863	3001870	0	21:23	?	00:00:00	(sd-pam)
+rjc0184	3001863	3001879	0	21:23	?	00:00:00	/usr/bin/dbus-daemon
+rjc0184	3001863	3001923	0	21:23	?	00:00:00	/usr/libexec/gvfsd
+rjc0184	3001863	3001937	0	21:23	?	00:00:00	/usr/libexec/gvfsd-fuse
+rjc0184	3001863	3001942	0	21:23	?	00:00:00	/usr/libexec/gvfs-udisks2-volume-monitor
+rjc0184	3001655	3001959	0	21:23	?	00:00:00	sshd:
+rjc0184	3001863	3001967	0	21:23	?	00:00:00	/usr/libexec/gvfs-goa-volume-monitor
+rjc0184	3001863	3001971	0	21:23	?	00:00:00	/usr/libexec/goa-daemon
+rjc0184	3001863	3001978	0	21:23	?	00:00:00	/usr/libexec/goa-identity-service
+rjc0184	3001863	3001983	0	21:23	?	00:00:00	/usr/libexec/gvfs-gphoto2-volume-monitor
+rjc0184	3001863	3001988	0	21:23	?	00:00:00	/usr/libexec/gvfs-mtp-volume-monitor
+rjc0184	3001863	3001992	0	21:23	?	00:00:00	/usr/libexec/gvfs-afc-volume-monitor
+rjc0184	3001959	3002011	0	21:23	?	00:00:00	/usr/lib/openssh/sftp-server
+rjc0184	3001800	3002127	0	21:24	?	00:00:00	sshd:
+rjc0184	3002127	3002131	0	21:24	pts/28	00:00:00	-bash
+rjc0184	3001863	3002269	0	21:25	?	00:00:00	/usr/libexec/tracker-miner-fs
+rjc0184	3001863	3002374	0	21:25	?	00:00:00	/usr/libexec/gvfsd-metadata
+root	966	3003436	0	21:26	?	00:00:00	sshd:
+mkv0036	1	3003471	0	21:26	?	00:00:00	/lib/systemd/systemd
+mkv0036	3003471	3003475	0	21:26	?	00:00:00	(sd-pam)
+mkv0036	3003471	3003484	0	21:26	?	00:00:00	/usr/libexec/tracker-miner-fs
+mkv0036	3003471	3003498	0	21:26	?	00:00:00	/usr/bin/dbus-daemon
+mkv0036	3003471	3003552	0	21:26	?	00:00:00	/usr/libexec/gvfsd
+mkv0036	3003471	3003557	0	21:26	?	00:00:00	/usr/libexec/gvfsd-fuse
+mkv0036	3003436	3003559	0	21:26	?	00:00:00	sshd:
+mkv0036	3003471	3003560	0	21:26	?	00:00:00	/usr/libexec/gvfs-udisks2-volume-monitor
+mkv0036	3003471	3003572	0	21:26	?	00:00:00	/usr/libexec/gvfs-goa-volume-monitor
+mkv0036	3003471	3003576	0	21:26	?	00:00:00	/usr/libexec/goa-daemon
+mkv0036	3003471	3003583	0	21:26	?	00:00:00	/usr/libexec/goa-identity-service
+mkv0036	3003471	3003587	0	21:26	?	00:00:00	/usr/bin/gnome-keyring-daemon
+mkv0036	3003471	3003594	0	21:26	?	00:00:00	/usr/libexec/gvfs-gphoto2-volume-monitor
+mkv0036	3003471	3003598	0	21:26	?	00:00:00	/usr/libexec/gvfs-mtp-volume-monitor
+mkv0036	3003471	3003602	0	21:26	?	00:00:00	/usr/libexec/gvfs-afc-volume-monitor
+root	2	3003616	0	21:26	?	00:00:00	[kworker/u257:2-xprtiod]
+mkv0036	3003559	3003698	0	21:26	?	00:00:00	/usr/lib/openssh/sftp-server
+njb0130	2999823	3003899	0	21:28	pts/19	00:00:00	nano
+root	966	3003902	0	21:28	?	00:00:00	sshd:
+erb0149	1	3003914	0	21:28	?	00:00:00	/lib/systemd/systemd
+njb0130	2999823	3003917	0	21:28	pts/19	00:00:00	script
+njb0130	3003917	3003918	0	21:28	pts/21	00:00:00	bash
+erb0149	3003914	3003920	0	21:28	?	00:00:00	(sd-pam)
+erb0149	3003914	3003927	0	21:28	?	00:00:00	/usr/libexec/tracker-miner-fs
+erb0149	3003914	3003935	0	21:28	?	00:00:00	/usr/bin/dbus-daemon
+erb0149	3003914	3003972	0	21:28	?	00:00:00	/usr/libexec/gvfsd
+erb0149	3003914	3003977	0	21:28	?	00:00:00	/usr/libexec/gvfsd-fuse
+erb0149	3003914	3003978	0	21:28	?	00:00:00	/usr/libexec/gvfs-udisks2-volume-monitor
+erb0149	3003902	3004009	0	21:28	?	00:00:00	sshd:
+erb0149	3003914	3004017	0	21:28	?	00:00:00	/usr/libexec/gvfs-goa-volume-monitor
+erb0149	3003914	3004021	0	21:28	?	00:00:00	/usr/libexec/goa-daemon
+erb0149	3003914	3004028	0	21:28	?	00:00:00	/usr/libexec/goa-identity-service
+erb0149	3003914	3004033	0	21:28	?	00:00:00	/usr/bin/gnome-keyring-daemon
+erb0149	3003914	3004038	0	21:28	?	00:00:00	/usr/libexec/gvfs-gphoto2-volume-monitor
+erb0149	3003914	3004042	0	21:28	?	00:00:00	/usr/libexec/gvfs-mtp-volume-monitor
+erb0149	3003914	3004047	0	21:28	?	00:00:00	/usr/libexec/gvfs-afc-volume-monitor
+erb0149	3004009	3004070	0	21:28	?	00:00:00	/usr/lib/openssh/sftp-server
+njb0130	3003918	3004222	0	21:29	pts/21	00:00:00	nano
+gm0394	2991442	3004371	0	21:30	pts/33	00:00:00	nano
+root	2	3004570	0	21:31	?	00:00:00	[kworker/1:0-cgroup_destroy]
+root	2	3004788	0	21:32	?	00:00:00	[kworker/0:0-events]
+root	2	3005147	0	21:35	?	00:00:00	[kworker/u256:3-events_unbound]
+bmv0045	2993846	3005285	0	21:36	pts/38	00:00:00	vi
+root	966	3005327	0	21:36	?	00:00:00	sshd:
+root	2	3005333	0	21:36	?	00:00:00	[kworker/1:1-events]
+root	2	3005355	0	21:37	?	00:00:00	[kworker/1:2-events]
+ndr0057	1	3005356	0	21:37	?	00:00:00	/lib/systemd/systemd
+ndr0057	3005356	3005358	0	21:37	?	00:00:00	(sd-pam)
+ndr0057	3005356	3005365	0	21:37	?	00:00:00	/usr/libexec/tracker-miner-fs
+ndr0057	3005356	3005380	0	21:37	?	00:00:00	/usr/bin/dbus-daemon
+ndr0057	3005356	3005402	0	21:37	?	00:00:00	/usr/libexec/gvfsd
+ndr0057	3005356	3005407	0	21:37	?	00:00:00	/usr/libexec/gvfsd-fuse
+ndr0057	3005356	3005409	0	21:37	?	00:00:00	/usr/libexec/gvfs-udisks2-volume-monitor
+ndr0057	3005356	3005443	0	21:37	?	00:00:00	/usr/libexec/gvfs-goa-volume-monitor
+ndr0057	3005356	3005448	0	21:37	?	00:00:00	/usr/libexec/goa-daemon
+ndr0057	3005356	3005471	0	21:37	?	00:00:00	/usr/libexec/goa-identity-service
+ndr0057	3005327	3005472	0	21:37	?	00:00:00	sshd:
+ndr0057	3005356	3005474	0	21:37	?	00:00:00	/usr/bin/gnome-keyring-daemon
+ndr0057	3005356	3005483	0	21:37	?	00:00:00	/usr/libexec/gvfs-gphoto2-volume-monitor
+ndr0057	3005356	3005487	0	21:37	?	00:00:00	/usr/libexec/gvfs-mtp-volume-monitor
+ndr0057	3005356	3005491	0	21:37	?	00:00:00	/usr/libexec/gvfs-afc-volume-monitor
+ndr0057	3005472	3005535	0	21:37	?	00:00:00	/usr/lib/openssh/sftp-server
+mp0841	2967758	3005538	0	21:37	?	00:00:00	/

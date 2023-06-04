@@ -1,0 +1,8 @@
+#include <stdio.h>
+
+int main() {
+// Print the "%" character
+printf("%c",'%');
+
+return 0;
+}

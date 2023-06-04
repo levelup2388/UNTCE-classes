@@ -1,0 +1,49 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2639
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fswiss\fcharset0 Helvetica-Bold;}
+{\colortbl;\red255\green255\blue255;\red26\green146\blue28;\red12\green69\blue13;\red0\green0\blue162;
+\red3\green106\blue7;\red38\green179\blue26;\red0\green0\blue0;\red197\green6\blue11;}
+{\*\expandedcolortbl;;\csgenericrgb\c10196\c57255\c10980;\csgenericrgb\c4706\c27059\c5098;\csgenericrgb\c0\c0\c63529;
+\csgenericrgb\c1176\c41569\c2745;\csgenericrgb\c14902\c70196\c10196;\csgenericrgb\c0\c0\c0;\csgenericrgb\c77255\c2353\c4314;}
+\margl1440\margr1440\vieww33120\viewh16680\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\tx24392\sl360\slmult1\pardirnatural\partightenfactor0
+
+\f0\fs72 \cf0 Post examples on threads\
+\
+1. Create a function that creates the field.\
+2. Create a function to display scores. I think on the side look better than above the field. \
+3. Create a function to move a player or the rabbit. (Blank current location and print at new location)\
+4. You may want to use double the horizontal as it will make the screen look better.\
+5. Create a function to display items. For initial testing just have it do a print. Then once you get other things working have it send the move to all players, the rabbit and possibly print on the server.\
+6. Use the following macros to position the cursor. (These are based on VT100 terminals)\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\tx24392\pardeftab1329\pardirnatural\partightenfactor0
+\cf2 \CocoaLigature0 #
+\f1\b \cf3 define
+\f0\b0 \cf2  
+\f1\b \cf4 clear
+\f0\b0 \cf2 () printf(\cf5 "
+\f1\b \cf6 \\033
+\f0\b0 \cf5 [H
+\f1\b \cf6 \\033
+\f0\b0 \cf5 [J"\cf2 )\cf7 \
+\cf2 #
+\f1\b \cf3 define
+\f0\b0 \cf2  
+\f1\b \cf4 gotoxy
+\f0\b0 \cf2 (x,y) printf(\cf5 "
+\f1\b \cf6 \\033
+\f0\b0 \cf5 [
+\f1\b \cf8 %d
+\f0\b0 \cf5 ;
+\f1\b \cf8 %d
+\f0\b0 \cf5 H"\cf2 , (y), (x))\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\tx24392\sl360\slmult1\pardirnatural\partightenfactor0
+\cf0 \CocoaLigature1 7. Place the cursor at the bottom or clear the screen when you exit. It will make the screen nicer when the program ends.\
+8. Create the rabbit and possibly one player working as part of the server before attempting to split it into client and server. This way you can verify the logic without having to worry about the socket.\
+\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\tx24392\sl360\slmult1\pardirnatural\partightenfactor0
+\cf7 \CocoaLigature0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\tx24392\sl360\slmult1\pardirnatural\partightenfactor0
+\cf0 \CocoaLigature1 \
+\
+}
