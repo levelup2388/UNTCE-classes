@@ -1,0 +1,25 @@
+#ifndef ARTWORKH
+#define ARTWORKH
+
+#include "Artist.h"
+
+class Artwork{
+   public:
+      Artwork();
+      Artwork(string title, int yearCreated, Artist artist);
+
+      string GetTitle() const;
+
+      int GetYearCreated() const;
+
+      void PrintInfo()const;
+   
+   private:
+      string title ;
+      int yearCreated ;// TODO: Declare private data members - title, yearCreated
+      Artist artist;
+      // TODO: Declare private data member artist of type Artist
+
+};
+
+#endif
