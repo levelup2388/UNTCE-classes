@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1642631937 source:c:\users\sw_sm\onedrive\documents\0_unt\spring_2022\csce_2110\c++ code\week one\counter\counter.cpp
+	"counter.h"
+
+1642687251 c:\users\sw_sm\onedrive\documents\0_unt\spring_2022\csce_2110\c++ code\week one\counter\counter.h
+
+1642640044 source:c:\users\sw_sm\onedrive\documents\0_unt\spring_2022\csce_2110\c++ code\week one\counter\driver.cpp
+	"counter.h"
+	<iostream>
+

@@ -1,0 +1,45 @@
+# depslib dependency file v1.0
+1641659258 source:c:\users\sw_sm\onedrive\documents\0_unt\spring_2022\csce_2110\moduleonedocs\list\driver.cpp
+	<iostream>
+	"itemType.h"
+	"listType.cpp"
+
+1641659318 c:\users\sw_sm\onedrive\documents\0_unt\spring_2022\csce_2110\moduleonedocs\list\itemtype.h
+	<string>
+
+1641659258 c:\users\sw_sm\onedrive\documents\0_unt\spring_2022\csce_2110\moduleonedocs\list\listtype.h
+
+1641659094 source:c:\users\sw_sm\onedrive\documents\0_unt\spring_2022\csce_2110\moduleonedocs\list\itemtype.cpp
+	"itemType.h"
+	<iostream>
+
+1641648790 source:c:\users\sw_sm\onedrive\documents\0_unt\spring_2022\csce_2110\moduleonedocs\list\listtype.cpp
+	<iostream>
+	<cstddef>
+	"listType.h"
+
+1641648790 c:\users\sw_sm\onedrive\documents\0_unt\spring_2022\csce_2110\moduleonedocs\list\listtype.cpp
+	<iostream>
+	<cstddef>
+	"listType.h"
+
+1641659258 source:c:\users\sw_sm\onedrive\documents\0_unt\spring_2022\csce_2110\module_adt_docs\list\driver.cpp
+	<iostream>
+	"itemType.h"
+	"listType.cpp"
+
+1641659318 c:\users\sw_sm\onedrive\documents\0_unt\spring_2022\csce_2110\module_adt_docs\list\itemtype.h
+	<string>
+
+1642647704 c:\users\sw_sm\onedrive\documents\0_unt\spring_2022\csce_2110\module_adt_docs\list\listtype.cpp
+	<iostream>
+	<cstddef>
+
+1641665013 source:c:\users\sw_sm\onedrive\documents\0_unt\spring_2022\csce_2110\module_adt_docs\list\itemtype.cpp
+	"itemType.h"
+	<iostream>
+
+1642647704 source:c:\users\sw_sm\onedrive\documents\0_unt\spring_2022\csce_2110\module_adt_docs\list\listtype.cpp
+	<iostream>
+	<cstddef>
+
