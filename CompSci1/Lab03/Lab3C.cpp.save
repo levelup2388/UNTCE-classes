@@ -1,0 +1,30 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	int a;
+	int b;
+	double c;
+	double d;
+
+	printf( "Enter two integer values: \n");
+	scanf("%i %i ", &a, &b);
+
+	printf("Enter two double values: \n");
+	scanf( "%lf %lf", &c,&d);
+
+	printf("You just enterded the inegers values:%i,%i, and the double values: %lf, %lf \n"a,b,c,d);\
+
+	a=a+b;
+	d=d/a;
+	c=c*5;
+	b=b%a;
+	c=a-c;
+
+	printf("The final values are:\n a=%i\n);
+
+
+
+	return 0;
+}

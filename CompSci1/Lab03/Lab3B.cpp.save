@@ -1,0 +1,28 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+
+	string name;
+	double salary;
+	int rate;
+	double bonus;
+
+	cout<<"Enter your name: \n";
+	getline(cin, name);
+	cout<<"Enter your salary: ";
+	cin>> salary;
+	srand(rate);
+	rate =rate % 6;
+	cout<<"bonus is"<< rate<<endl;
+	bonus = salary * (rate/100);
+	cout<< name<<" earned a bonus of "<<bonus<<endl;
+
+
+
+
+
+
+	return 0;
+}

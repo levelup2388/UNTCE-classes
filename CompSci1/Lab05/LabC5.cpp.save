@@ -1,0 +1,29 @@
+/*Nicholas Bright (nicholasbright@my.unt.edu)
+9/21/20
+shrestha
+description-*/
+#include<iostream>
+#include<string>
+using namespace std;
+
+int main()
+{
+	int totalN=0;
+	int totalS=0;
+	string usrStr;
+//isaplha,isdigit,isspace
+	cout<<"Type in a message:";
+	cin>>usrStr;
+
+	for (int i = 0; i<=usrStr.size(); i++){
+		if((isdigit(usrStr.at(i)))||(isalpha(usrStr.at(i)))||(isspace(usrStr.at(i)))){
+		totalN=totalN+1;
+		}
+		else{
+		totalS=totalS+1;
+		}
+	}
+	cout<<totalN<<endl<<totalS<<endl;
+
+	return 0;
+}
